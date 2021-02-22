@@ -46,8 +46,8 @@ The values allowed for `type`  are:
 
 If it's necessary to give a context to the commit and explain the reasons of the changes, writte in the commit's body following the rule:
 
--   Must contain the `what` and the `why` that change was made.
--   Maximum of 72 character per line.
+-   Must contain the reason of the change and what was changed.
+-   Maximum of 72 characters per line.
 
 Exemple:
 
