@@ -1,53 +1,55 @@
-# Política de Commits
+# Commits Policy
 
-### *Commits* atômicos
-Dividir o desenvolvimento do trabalho em *commits* pequenos, concisos, fazendo com que cada *commit* implemente uma funcionalidade.
+### Atomic *Commits*
+Share work development in small and concise *commits*, so that each commit implements one feature.
 
-### *Commits* em Inglês
-O padrão das mensagens dos *commits* desse projeto, deve ser efetuada no idioma **Inglês** . Afim de deixar o projeto mais acessível ao público global.
+### *Commits* in English
+The commmits' messages pattern must be done in **English**, in order to make the project more accessible to the global public. 
 
-### Regra 50/72
-As mensagens devem possuir no máximo 50 caracteres, caso seja necessário uma mensagem melhor, escreva um resumo de até 50 caracteres, adicione uma linha em branco e descreva melhor o commit em quantas linhas forem necessárias, porém cada linha deve respeitar o tamanho máximo de 72 caracteres. Caso seu commit necessite mais espaço que isso ele não é atômico.
+### Rule 50/72
+The messages must contain maximum 50 characters. If a better message is needed, add a new blank line and describe better the commit using the amount of lines necessary.
+However, each line must respect the maximum number of 72 characters. If your commit needs more space than that, it's not atomic. 
 
-# Anatomia do *Commit*
-A anatomia do commit deve seguir o seguinte padrão:
 
-### Formato:
+# Anatomy of the *Commit*
+The anatomy of the commit must follow this following pattern:
+
+### Shape:
 ```
-<tipo>(#número da issue): assunto
+<type>(#number of the issue): subject
   
-<corpo>
+<body>
 ...
 ```
 
 
 
-### Assunto
+### Subject
 
--   Máximo de 50 caracteres
--   Tipo de escopo deve estar em letras minúsculas
+-   Maximum 50 characters.
+-   Scope type must be lowercase. 
 
-Exemplo:
+Exemple:
 
 `fix(#13): route correction /login`.
 
-Os valores permitidos para o  `tipo`  são:
+The values allowed for `type`  are:
 
--   `feat`: nova funcionalidade
--   `style`: formatação geral no código
--   `refact`: refatoração de código
--   `test`: adicionar/refatorar testes
--   `fix`: correções
--   `docs`: relacionado a documentação
+-   `feat`: new feature
+-   `style`: generic formatting in the code
+-   `refact`: refactoring of the code
+-   `test`: add/refactor tests
+-   `fix`: corrections
+-   `docs`: related to documentation
 
-### Corpo
+### Body
 
-Se for necessário dar um contexto ao commit e explicar o porquê das mudanças, escreva no corpo do commit seguindo a regra:
+If it's necessary to give a context to the commit and explain the reasons of the changes, writte in the commit's body following the rule:
 
--   Deve conter o  `o que`  e o  `por que`  foi feita a mudança
--   Máximo de 72 caracteres por linha
+-   Must contain the reason of the change and what was changed.
+-   Maximum of 72 characters per line.
 
-Exemplo:
+Exemple:
 
 ```
 refactor(#28): change in registration button 
