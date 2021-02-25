@@ -1,0 +1,27 @@
+{
+  "name": "2020.2-e-vacina-backend",
+  "version": "1.0.0",
+  "description": "Carteira de vacinacao digital",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fga-eps-mds/2020.2-e-Vacina-Backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fga-eps-mds/2020.2-e-Vacina-Backend/issues"
+  },
+  "homepage": "https://github.com/fga-eps-mds/2020.2-e-Vacina-Backend#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
