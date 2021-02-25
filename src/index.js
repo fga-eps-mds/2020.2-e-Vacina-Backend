@@ -4,7 +4,7 @@ const router = express.Router();
 
 app.use(router);
 app.get('/', (req, res) => {
-    res.send("Oi gostasaaa");
+    res.send("Oi node");
 })
 
 
