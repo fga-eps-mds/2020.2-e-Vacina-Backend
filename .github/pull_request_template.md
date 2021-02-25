@@ -8,8 +8,8 @@ _Permite que o celular do usuário se conecte com o seu computador pessoal._
 ### Critérios de Aceitação
 #### Checklist
 
-- [x]
-- [x] Build passando
+- [x] Teste passaram
+- [x] Build passaram
 - [x] Sem conflitos com a Branch Main ou Development.
 
 Resolve #Número_da_Issue.
