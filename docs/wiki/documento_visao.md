@@ -63,15 +63,6 @@ Periodicamente o usuário receberá notificações alertando sobre datas de vaci
 
 O aplicativo será gratuito.
 
-**2.1  Situação Atual**
-
-Atualmente, os brasileiro possuem a carteira de vacina física, que está sujeita a percas, detoriação e rasuras, essa é a única forma oficial de fazer controle de vacinação individual. Algumas empresas com a Pfizer criaram aplicativos informativos sobre vacias, porém esse não são direcionados ao público brasileiro. 
-
-**2.2  Escopo**
-
-| Num  |  Módulo  | Descrição |  
-| ------------------- | ------------------- | ------------------- | 
-|  1 |  Sistema mobile (responsivo.) |O sistema deve funcionar conectado à uma API e banco de dados e ser acessível na Play Store. 
 
 **2.1  Situação Atual**
 
