@@ -58,3 +58,63 @@ Periodicamente o usuário receberá notificações alertando sobre datas de vaci
 
 O aplicativo será gratuito.
 
+**2.1  Situação Atual**
+
+Atualmente, os brasileiro possuem a carteira de vacina física, que está sujeita a percas, detoriação e rasuras, essa é a única forma oficial de fazer controle de vacinação individual. Algumas empresas com a Pfizer criaram aplicativos informativos sobre vacias, porém esse não são direcionados ao público brasileiro. 
+
+**2.2  Escopo**
+
+| Num  |  Módulo  | Descrição |  
+| ------------------- | ------------------- | ------------------- | 
+|  1 |  Sistema mobile (responsivo.) |O sistema deve funcionar conectado à uma API e banco de dados e ser acessível na Play Store. 
+
+**2.1  Situação Atual**
+
+Atualmente, os brasileiro possuem a carteira de vacina física, que está sujeita a perdas, deterioração e rasuras, essa é a única forma oficial de fazer controle de vacinação individual. Algumas empresas com a Pfizer criaram aplicativos informativos sobre vacinas, porém esse não é direcionado ao público brasileiro. 
+
+**2.2  Escopo**
+
+| Num  |  Módulo  | Descrição |  
+| ------------------- | ------------------- | ------------------- | 
+|  1 |  Sistema mobile (responsivo.) |O sistema deve funcionar conectado à uma API e banco de dados e ser acessível na Play Store. 
+
+**2.3 Atores** 
+O sistema possui três tipos de atores, sendo eles:     
+   - Usuário Administrador (Desenvolvedores);      
+   - Usuário Cliente (Cidadão);
+ 
+
+| Num  |  Ator  | Definição e Privilégio de Acesso e Segurança |  
+| ------------------- | ------------------- | ------------------- | 
+|  1 |  Usuário Administrador | Responsável pelo gerenciamento do sistema, atualizando e adicionando novas vacinas, a campanha de vacinação. |
+|  2 |  Usuário Cliente | Interage com o sistema a partir do aplicativo, capaz de criar usuários-filhos e administrar as vacinas que cada um deve tomar.|
+
+### 3. Requisitos
+
+**3.1 Requisitos Funcionais**
+
+|ID| Descrição| Prioridade|
+|  RF 01  |  O sistema deve permitir ao usuário administrador cadastrar vacinas.|Essencial|
+|  RF 02  |  O sistema deve permitir ao usuário administrador cadastrar campanhas de vacinas.|Essencial|
+|  RF 03  |  O sistema deve permitir ao usuário cadastrar vacinas que já foram aplicadas, informando a data.|Essencial|
+|  RF 04  |  O sistema deve permitir ao usuário visualizar informações sobre vacinas.|Essencial|
+|  RF 05  |  O sistema deve notificar o usuário cliente de campanhas de vacinação e vacinas pendentes e fazer agendamentos|Essencial|
+|  RF 06  |  O sistema deve permitir uma interface diferenciada ao usuário administrador.|Essencial|
+|  RF 07  |  O sistema deve permitir uma interface específica ao usuário cliente.|Essencial|
+|  RF 08  |  O sistema deve permitir que o usuário realize um cadastro pessoal.|Essencial|
+|  RF 09  |  O sistema deve permitir que o usuário realize um cadastro de usuários-filhos.|Essencial|
+
+
+
+**3.2 Requisitos Não Funcionais**
+
+|ID| Descrição| Prioridade|
+| RF 01| Os dados dos usuários clientes serão gravados no sistema de banco de dados utilizando criptografia de dados.| Segurança |
+| RF 02| O sistema deve ser desenvolvido para mobile.| Interoperabilidade |
+| RF 03| O sistema deve dispor de design responsivo.| Usabilidade |
+| RF 04| O sistema deve utilizar o padrão UML 2.0 para a documentação.| Padrões |
+| RF 05| O sistema deve utilizar a linguagem de programação Javascript e Dart.| Portabilidade |
+| RF 06| A interface do sistema deve ser de fácil manipulação.| Usabilidade | 
+| RF 07| Os dados do usuário cliente serão trafegados no sistema de banco de dados utilizando criptografia de dados. | Segurança |
+
+
