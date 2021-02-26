@@ -1,8 +1,8 @@
 ## Histórico de Versões
 | Versão  |  Data  | Autor  |  Descrição  |
 | ------------------- | ------------------- | ------------------- | ------------------- |
-|  1.0 |  28/25/2020 | Carlos Daniel, Paulo Vitor |  Documento de visão |
-|   |   |   |   |
+|  1.0 |  25/02/2020 | Carlos Daniel, Paulo Vitor |  Documento de visão |
+|  1.1 |  26/02/2020 | Carlos Daniel, Paulo Vitor  |  Requisitos funcionais e não funcionais |
 |   |   |   |   |
 |   |   |   |   |
 |   |   |   |   |
@@ -18,7 +18,12 @@
 - 1.1. Propósito do Documento de Requisitos
 - 1.2. Público Alvo
 2.  **Descrição Geral do Produto**
-
+- 2.1. Situação Atual
+- 2.2. Escopo
+- 2.3. Atores
+3.  **Requisitos**
+- 3.1. Funcionais
+- 3.2. Não Funcionais
 
 
 ### 1.  Introdução
