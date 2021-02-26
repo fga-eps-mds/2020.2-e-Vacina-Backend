@@ -1,10 +1,3 @@
-## Histórico de Versões
-| Versão  |  Data  | Autor  |  Descrição  |
-| ------------------- | ------------------- | ------------------- | ------------------- |
-|  1.0 |  11/02/2020 | Ciro | Issue template |
-|   |   |   |   |
-
-  
 ---
 name: issue template
 about: Template basico das Issues
@@ -13,6 +6,12 @@ labels: ''
 assignees: ''
 
 ---
+
+## Histórico de Versões
+| Versão  |  Data  | Autor  |  Descrição  |
+| ------------------- | ------------------- | ------------------- | ------------------- |
+|  1.0 |  11/02/2020 | Ciro | Issue template |
+|   |   |   |   |
 
 ## Descrição
 
