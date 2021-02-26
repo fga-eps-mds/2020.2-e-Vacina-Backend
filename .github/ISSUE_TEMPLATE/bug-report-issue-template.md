@@ -7,6 +7,15 @@ assignees: ''
 
 ---
 
+## Histórico de Versões
+| Versão  |  Data  | Autor  |  Descrição  |
+| ------------------- | ------------------- | ------------------- | ------------------- |
+|  1.0 |  26/02/2020 | Carlos Daniel | Issue template |
+|   |   |   |   |
+
+
+
+
 **Descreva o bug**
 - Uma descrição simples e concisa do que é o bug.
 
