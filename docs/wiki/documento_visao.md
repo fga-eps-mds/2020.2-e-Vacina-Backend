@@ -99,6 +99,7 @@ O sistema possui três tipos de atores, sendo eles:
 **3.1 Requisitos Funcionais**
 
 |ID| Descrição| Prioridade|
+| ------------------- | ------------------- | ------------------- |
 |  RF 01  |  O sistema deve permitir ao usuário administrador cadastrar vacinas.|Essencial|
 |  RF 02  |  O sistema deve permitir ao usuário administrador cadastrar campanhas de vacinas.|Essencial|
 |  RF 03  |  O sistema deve permitir ao usuário cadastrar vacinas que já foram aplicadas, informando a data.|Essencial|
@@ -114,6 +115,7 @@ O sistema possui três tipos de atores, sendo eles:
 **3.2 Requisitos Não Funcionais**
 
 |ID| Descrição| Prioridade|
+| ------------------- | ------------------- | ------------------- |
 | RF 01| Os dados dos usuários clientes serão gravados no sistema de banco de dados utilizando criptografia de dados.| Segurança |
 | RF 02| O sistema deve ser desenvolvido para mobile.| Interoperabilidade |
 | RF 03| O sistema deve dispor de design responsivo.| Usabilidade |
