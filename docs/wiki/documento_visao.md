@@ -29,7 +29,7 @@
 ### 1.  Introdução
 
 **1.1  Propósito do Documento de Requisitos**  
-Este documento tem como propósito apresentar o aplicativo e-Vacina: uma carteira digital de vacinão. Além disso, também serão apresentados seus requisitos funcionais e não-funcionais e diagramas. Por fim, descriação do produto, interfaces e compartamentos esperados do sistema.
+Este documento tem como propósito apresentar o aplicativo e-Vacina: uma carteira digital de vacinação. Além disso, também serão apresentados seus requisitos funcionais e não-funcionais e diagramas. Por fim, descriação do produto, interfaces e comportamentos esperados do sistema.
 
 **1.2  Público Alvo**  
 Este documento destina-se aos stackholders (arquitetos de software, engenheiros de software, testadores e usuários classificados como usuários fornecedores).
@@ -39,7 +39,7 @@ Este documento destina-se aos stackholders (arquitetos de software, engenheiros 
 **O que é**
 
 O e-Vacina é um aplicativo mobile, disponível nas plataformas Android e IOS, que servirá como uma representação digital da carteira de vacinação usado pelos brasileiros, semelhante ao e-Título usado nas últimas eleições.
-Nesse aplicativo, o usúario podera fazer controle das doses das vacinas que ele tomou e acessar inforções sobre datas de vacinação, doenças previnidas e procedimentos.
+Nesse aplicativo, o usúario poderá fazer controle das doses das vacinas que ele tomou e acessar informações sobre datas de vacinação, doenças previnidas e procedimentos.
 
 **Para quem e onde**
 
@@ -47,7 +47,7 @@ O aplicativo foi desenvolvido por estudantes da Universiade de Brasília para to
 
 **Por quê**
 
-O e-Vacina é mais um passo para transformação digital do mundo. Uma carteira de vacinção digital trazerá integração e comodidade para o processo de imunização da população. 
+O e-Vacina é mais um passo para transformação digital do mundo. Uma carteira de vacinação digital que trará integração e comodidade para o processo de imunização da população. 
 
 **Quando utilizar**
 
@@ -55,7 +55,7 @@ O aplicativo será usado periodicamente em períodos de vacinção.
 
 **Como será utilizada**
 
-Inicialmente, o usuário deverá ser registrar informando seus dados: nome, cidade, idade, gênero, ect. 
+Inicialmente, o usuário deverá se registrar informando seus dados: nome, cidade, idade, gênero, ect. 
 A partir das informações fornecidas, o aplicativo fornecerá as vacinas que devem ser tomadas, com suas respectivas datas e razões. Ao tomar a vacina, o usuário atualiza a sua carteira digital.
 Periodicamente o usuário receberá notificações alertando sobre datas de vacinação. 
 
@@ -66,23 +66,23 @@ O aplicativo será gratuito.
 
 **2.1  Situação Atual**
 
-Atualmente, os brasileiro possuem a carteira de vacina física, que está sujeita a perdas, deterioração e rasuras, essa é a única forma oficial de fazer controle de vacinação individual. Algumas empresas com a Pfizer criaram aplicativos informativos sobre vacinas, porém esse não é direcionado ao público brasileiro. 
+Atualmente, os brasileiro possuem a carteira de vacina física, que está sujeita a perdas, deterioração e rasuras, essa é a única forma oficial de fazer controle de vacinação individual. Algumas empresas como a Pfizer criaram aplicativos informativos sobre vacinas, porém esse não é direcionado ao público brasileiro. 
 
 **2.2  Escopo**
 
 | Num  |  Módulo  | Descrição |  
 | ------------------- | ------------------- | ------------------- | 
-|  1 |  Sistema mobile (responsivo.) |O sistema deve funcionar conectado à uma API e banco de dados e ser acessível na Play Store. 
+|  1 |  Sistema mobile (responsivo) |O sistema deve funcionar conectado a uma API e banco de dados e ser acessível na Play Store. 
 
 **2.3 Atores** 
-O sistema possui três tipos de atores, sendo eles:     
+O sistema possui dois tipos de atores, sendo eles:     
    - Usuário Administrador (Desenvolvedores);      
    - Usuário Cliente (Cidadão);
  
 
 | Num  |  Ator  | Definição e Privilégio de Acesso e Segurança |  
 | ------------------- | ------------------- | ------------------- | 
-|  1 |  Usuário Administrador | Responsável pelo gerenciamento do sistema, atualizando e adicionando novas vacinas, a campanha de vacinação. |
+|  1 |  Usuário Administrador | Responsável pelo gerenciamento do sistema, atualizando e adicionando novas vacinas a campanha de vacinação. |
 |  2 |  Usuário Cliente | Interage com o sistema a partir do aplicativo, capaz de criar usuários-filhos e administrar as vacinas que cada um deve tomar.|
 
 ### 3. Requisitos
