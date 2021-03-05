@@ -20,7 +20,7 @@
 - 2.3 Tecnologias
 - 2.3.1 Angular
 - 2.3.2 Node.js
-- 2.3.3 PostgreSQL
+- 2.3.3 MongoDB
 - 2.3.4 Docker
 - 2.3.5 Docker Compose
 3. **Metas e Restrições da Arquiteura**
