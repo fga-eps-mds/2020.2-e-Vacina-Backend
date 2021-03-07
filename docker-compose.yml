@@ -4,7 +4,7 @@ services:
       container_name: backend_e-vacina
       command: npm start
       environment:
-          - DATABASE_URL=mongodb://mongodb/oxfford
+          - DATABASE_URL=mongodb://mongodb/e-vacina
       build:
           context: .
           dockerfile: Dockerfile
