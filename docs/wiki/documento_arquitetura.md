@@ -7,34 +7,39 @@
 
 
 ## Sumário
-1.  **Introdução**
-- 1.1 Finalidade
-- 1.2 Escopo
-- 1.3 Definições, Acrônimos e Abreviações
-- 1.4 Visão Geral
-2. **Representação Arquitetural**
-- 2.1 Diagrama de Relações
-- 2.2 Representação dos Serviços
-- 2.2.1 Frontend
-- 2.2.2 Backend
-- 2.3 Tecnologias
-- 2.3.1 Angular
-- 2.3.2 Node.js
-- 2.3.3 MongoDB
-- 2.3.4 Docker
-- 2.3.5 Docker Compose
-3. **Metas e Restrições da Arquiteura**
-- 3.1 Metas
-- 3.2 Restrições Tecnológicas
-4. **Visão de Casos de Uso**
-- 4.1. Realização de Casos de Uso
-5. Visão Lógica
-- 5.1. Visão Geral
-- 5.2. Pacotes de Design Significativos do Ponto de Vista da Arquitetura
-- 5.3. Visão da Implantação
-- 5.3.1 Frontend
-- 5.3.2 Backend
-6. Tamanho e Desempenho
+[1.  **Introdução**](#_1-Introdução)
+- [1.1 Finalidade](#_11-Finalidade)
+- [1.2 Escopo](#_12-Escopo)
+- [1.3 Definições, Acrônimos e Abreviações](#_13-Definições-Acrônimos-e-Abreviações)
+- [1.4 Visão Geral](#_14-Visão-Geral)  
+
+[2. **Representação Arquitetural**](#_2-Representação-Arquitetural)
+- [2.1 Diagrama de Relações](#_21-Diagrama-de-Relações)
+- [2.2 Representação dos Serviços](#_22-Representação-dos-Serviços)
+- [2.2.1 Frontend](#_221-Frontend)
+- [2.2.2 Backend](#_222-Backend)
+- [2.3 Tecnologias](#_23-Tecnologias)
+- [2.3.1 Flutter](#_231-Flutter)
+- [2.3.2 Node.js](#_232-Nodejs)
+- [2.3.3 MongoDB](#_233-MongoDB)
+- [2.3.4 Docker](#_234-Docker)
+- [2.3.5 Docker Compose](#_235-Docker-Compose)  
+
+[3. **Metas e Restrições da Arquiteura**](#_3-Metas-e-Restrições-da-Arquiteura)
+- [3.1 Metas](#_31-Metas)
+- [3.2 Restrições Tecnológicas](#_32-Restrições-Tecnológicas)  
+
+[4. **Visão de Casos de Uso**](#_4-Visão-de-Casos-de-Uso)
+- [4.1. Realização de Casos de Uso](#_41-Realização-de-Casos-de-Uso)  
+
+[5. Visão Lógica](#_5-Visão-Lógica)
+- [5.1. Visão Geral](#_51-Visão-Geral)
+- [5.2. Pacotes de Design Significativos do Ponto de Vista da Arquitetura](#_52-Pacotes-de-Design-Significativos-do-Ponto-de-Vista-da-Arquitetura)
+- [5.3. Visão da Implantação](#_53-Visão-da-Implantação)
+- [5.3.1 Frontend](#_531-Frontend)
+- [5.3.2 Backend](#_532-Backend)
+
+<!-- 6. Tamanho e Desempenho
 7. Qualidade
 - 7.1 Precisão
 - 7.2 Confiabilidade
@@ -44,7 +49,7 @@
 - 7.6 Manutenibilidade
 - 7.7 Testabilidade
 - 7.8 Flexibilidade
-- 7.9 Portabilidade
+- 7.9 Portabilidade -->
 
 ## 1. Introdução
 
@@ -67,6 +72,11 @@ SDK        |  Software Development Kit
 São apresentados nesse documento os detalhes arquiteturais de como o sistema deverá se comportar em diferentes processos e informações acerca das tecnologias implantadas.
 ## 2. Representação Arquitetural
 ###  2.1 Diagrama de Relações
+![Diagrama de relações](../assets/diagrama_de_relacoes.png)
+
+O diagrama representa uma arquitetura cliente-servidor que divide a aplicação em dois módulos, sendo um para os clientes, responsáveis por sua execução, e o outro para o servidor, contendo seus processos executados em um servidor. A comunicação entre os módulos é feita por requisições HTTP.  
+
+Cada módulo será feito em repositórios diferentes com configurações diferentes.
 ###  2.2 Representação dos Serviços
 #### 2.2.1 Frontend
  Frontend do e-vacina é responsavel por toda a interação com o usuário. Ele apresenta uma interface gráfica que habilita o usuário a usar todas as funções do sistema.
@@ -109,6 +119,19 @@ Docker: Ambiente de empacotamento da aplicação;
 
 Docker Compose: Orquestrador de contêineres Docker.
 ## 4. Visão de Casos de Uso
+A documentação de caso de uso visa especificar o comportamento do sistema do ponto de vista do usuário.
+
+- Realizar cadastro
+- Realizar login
+- Recuperar senha
+- Criar carteira de vacina
+- Editar carteira de vacina
+- Adicionar vacina
+- Remover vacina
+- Editar perfil
+- Consultar campanhas
+
+![Casos de uso](../assets/casos_de_uso.png)
 ### 4.1. Realização de Casos de Uso
 ## 5. Visão Lógica
 ###  5.1. Visão Geral
@@ -116,7 +139,7 @@ Docker Compose: Orquestrador de contêineres Docker.
 ###  5.3. Visão da Implantação
 ###  5.3.1 Frontend
 ###  5.3.2 Backend
-## 6. Tamanho e Desempenho
+<!-- ## 6. Tamanho e Desempenho
 ## 7. Qualidade
 ### 7.1 Precisão
 ### 7.2 Confiabilidade
@@ -126,4 +149,4 @@ Docker Compose: Orquestrador de contêineres Docker.
 ### 7.6 Manutenibilidade
 ### 7.7 Testabilidade
 ### 7.8 Flexibilidade
-### 7.9 Portabilidade
+### 7.9 Portabilidade -->  
