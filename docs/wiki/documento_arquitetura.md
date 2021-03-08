@@ -2,7 +2,8 @@
 | Versão  |  Data  | Autor  |  Descrição  |
 | ------------------- | ------------------- | ------------------- | ------------------- |
 |  1.0 |  26/02/2020 | Ciro Costa, Gabriel Luiz |  Criação documento de arquitetura |
-|  1.1 |  05/03/2021 | Guilherme Rogelin, Erick |  Adição de tópicos e correção
+|  1.1 |  05/03/2021 | Guilherme Rogelin, Erick |  Adição de tópicos e correção |
+|  1.2 |  08/03/2021 | Guilherme Rogelin, Erick |  Adição de tópicos |
 
 
 
@@ -130,15 +131,40 @@ A documentação de caso de uso visa especificar o comportamento do sistema do p
 - Remover vacina
 - Editar perfil
 - Consultar campanhas
+- Verificar validades
 
 ![Casos de uso](../assets/casos_de_uso.png)
 ### 4.1. Realização de Casos de Uso
+
+|     Casos de uso         |    Autor    | Realização |
+|------------------------- | ----------- | ----------- |
+|Realizar cadastro         |   Usuário   | O usuário deve cadastrar seu cpf, data de nascimento, email e senha opcional. |
+|Realizar login            |   Usuário   | O usuário irá preencher seu email e senha informados no cadastro. |
+|Recuperar senha           |   Usuário   | O usuário receberá um email de confirmação e poderá criar uma nova senha. |
+|Criar carteira de vacina  |   Usuário   | O usuário deve informar todas as vacinas já tomadas e suas respectivas datas. |
+|Editar carteira de vacina |   Usuário   | O usuário poderá editar sua carteira adicionando ou removendo uma vacina. |
+|Adicionar vacina          |   Usuário   | O usuário deve informar o nome da vacina e sua data para adicioná-la em sua carteira. |
+|Remover vacina            |   Usuário   | O usuário poderá remover uma vacina já vencida de sua carteira. |
+|Editar perfil             |   Usuário   | O usuário poderá editar seu próprio perfil e mudar informações pessoais. |
+|Consultar campanhas       |   Usuário   | O usuário receberá notificações de campanhas de vacinação e poderá consultá-las. |
+|Verificar validades       |   Usuário   | O usuário receberá notificações de vacinas próximo à data de vencimento. |
+
 ## 5. Visão Lógica
-###  5.1. Visão Geral
-###  5.2. Pacotes de Design Significativos do Ponto de Vista da Arquitetura
-###  5.3. Visão da Implantação
-###  5.3.1 Frontend
-###  5.3.2 Backend
+###  5.1. Visão Geral
+O aplicativo baseia-se em uma arquitetura de objetos que possuem uma relação dinâmica entre si, o que permite o acesso de funcionalidades entre pacotes e classes e facilita a manutenção. O usuário interage com o cadastro, que irá verificar se já existe algum usuário cadastrado com aquelas informações, ou interage com o login, que irá buscar as informações preenchidas em um banco de dados e permitirá o acesso ao aplicativo. Em seguida ele interage com as vacinas, podendo editar sua carteira de vacinação, verificar validade de suas vacinas e acompanhar campanhas de vacinação.
+
+###  5.2. Pacotes de Design Significativos do Ponto de Vista da Arquitetura
+  ![Pacotes de Design](../assets/pacotes_de_design.png) 
+
+###  5.3. Visão da Implantação 
+  ####  5.3.1 Frontend 
+  O Frontend é baseado completamente linguagem Dart juntamente com o Flutter.
+
+  ![Frontend](../assets/frontend.png)  
+  ####  5.3.1 Backend
+  O Backend é baseado completamente em Node.js, JavaScript e MongoDB.
+
+  ![Backend](../assets/backend.png)
 <!-- ## 6. Tamanho e Desempenho
 ## 7. Qualidade
 ### 7.1 Precisão
