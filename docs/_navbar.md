@@ -1,8 +1,3 @@
 - Documentação
     - [Documento de Arquitetura](./wiki/documento_arquitetura.md)
     - [Documento de Visão](./wiki/documento_visao.md)
-- Sprints
-    - [Sprint 0](./wiki/documento_sprint0.md)
-    - [Sprint 1](./wiki/documento_sprint1.md)
-    - [Sprint 2](./wiki/documento_sprint2.md)
-    - [Sprint 3](./wiki/documento_sprint3.md)
