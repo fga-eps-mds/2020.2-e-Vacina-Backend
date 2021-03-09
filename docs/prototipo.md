@@ -9,9 +9,6 @@
 
 <br>
 
-## 1. Introdução
-
-
 ## 1. Protótipo de Alta Fidelidade
 ![Telas iniciais](img/initial-screens.jpg)
 ![Tela Vacina](img/vacinas-screens.jpg)
