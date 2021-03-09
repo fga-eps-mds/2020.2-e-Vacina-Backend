@@ -153,8 +153,11 @@ A documentação de caso de uso visa especificar o comportamento do sistema do p
 ###  5.1. Visão Geral
 O aplicativo baseia-se em uma arquitetura de objetos que possuem uma relação dinâmica entre si, o que permite o acesso de funcionalidades entre pacotes e classes e facilita a manutenção. O usuário interage com o cadastro, que irá verificar se já existe algum usuário cadastrado com aquelas informações, ou interage com o login, que irá buscar as informações preenchidas em um banco de dados e permitirá o acesso ao aplicativo. Em seguida ele interage com as vacinas, podendo editar sua carteira de vacinação, verificar validade de suas vacinas e acompanhar campanhas de vacinação.
 
-###  5.2. Pacotes de Design Significativos do Ponto de Vista da Arquitetura
-  ![Pacotes de Design](../assets/pacotes_de_design.png) 
+###  5.2. Pacotes de Design Significativos do Ponto de Vista da Arquitetura  
+  A aplicação no Front End será feita em Flutter. No diagrama abaixo mostra como será a estrutura básica de pacotes do nosso aplicativo.   
+  ![Pacotes Frontend](../assets/diagrama_pacotes_front.png)  
+  O Back End será feito em NodeJs. No diagrama abaixo mostra como será a estrutura básica de pacotes
+  ![Pacotes Backend](../assets/diagrama_pacotes_back.png)
 
 ###  5.3. Visão da Implantação 
   ####  5.3.1 Frontend 
