@@ -20,13 +20,12 @@ assignees: ''
 - Qual o motivo desse estudo.
 
 ## Tarefas
-
-- [ ] Tarefa 1 Ex: Apresentar ao grupo, fazer um resumo.
-- [ ] Tarefa 2 (Opcional)
+- Descreva quais são as tarefas deste estudo, como deve ser feito. Ex: Apresentar ao grupo, fazer um resumo.(Apagar esse trecho, recomendação)
+- [ ] Tarefa 1
+- [ ] Tarefa 2 
 - [ ] Tarefa 3
 
 ## Critério de aceitação
-
 - [ ] Todos comentarem algo sobre o aprendizado.
-- [ ] Critério 2 (Opcional)
+- [ ] Critério 2 
 - [ ] Critério 3
