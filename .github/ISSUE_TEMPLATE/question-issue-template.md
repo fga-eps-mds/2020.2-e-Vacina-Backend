@@ -10,7 +10,7 @@ assignees: ''
 ## Histórico de Versões
 | Versão  |  Data  | Autor  |  Descrição  |
 | ------------------- | ------------------- | ------------------- | ------------------- |
-|  1.0 |  03/03/2020 | Carlos Daniel, Paulo Vitor | Issue template |
+|  1.0 |  03/03/2021 | Carlos Daniel, Paulo Vitor | Issue template |
 |   |   |   |   |
 
 
