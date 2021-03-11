@@ -3,14 +3,6 @@
 | ------------------- | ------------------- | ------------------- | ------------------- |
 |  1.0 |  25/02/2020 | Carlos Daniel, Paulo Vitor |  Documento de visão |
 |  1.1 |  26/02/2020 | Carlos Daniel, Paulo Vitor  |  Requisitos funcionais e não funcionais |
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
 
 
 ## Sumário
@@ -29,7 +21,7 @@
 ### 1.  Introdução
 
 **1.1  Propósito do Documento de Requisitos**  
-Este documento tem como propósito apresentar o aplicativo e-Vacina: uma carteira digital de vacinão. Além disso, também serão apresentados seus requisitos funcionais e não-funcionais e diagramas. Por fim, descriação do produto, interfaces e compartamentos esperados do sistema.
+Este documento tem como propósito apresentar o aplicativo e-Vacina: uma carteira digital de vacinão. Além disso, também serão apresentados seus requisitos funcionais, não-funcionais e diagramas. Por fim, descriação do produto, interfaces e compartamentos esperados do sistema.
 
 **1.2  Público Alvo**  
 Este documento destina-se aos stackholders (arquitetos de software, engenheiros de software, testadores e usuários classificados como usuários fornecedores).
@@ -38,7 +30,7 @@ Este documento destina-se aos stackholders (arquitetos de software, engenheiros 
 
 **O que é**
 
-O e-Vacina é um aplicativo mobile, disponível nas plataformas Android e IOS, que servirá como uma representação digital da carteira de vacinação usado pelos brasileiros, semelhante ao e-Título usado nas últimas eleições.
+O e-Vacina é um aplicativo mobile, disponível nas plataformas Android e IOS, que servirá como uma representação digital da carteira de vacinação usado pelos brasileiros, semelhante ao e-Título usado nas eleições distritais de 2020.
 Nesse aplicativo, o usúario podera fazer controle das doses das vacinas que ele tomou e acessar inforções sobre datas de vacinação, doenças previnidas e procedimentos.
 
 **Para quem e onde**
@@ -55,7 +47,7 @@ O aplicativo será usado periodicamente em períodos de vacinção.
 
 **Como será utilizada**
 
-Inicialmente, o usuário deverá ser registrar informando seus dados: nome, cidade, idade, gênero, ect. 
+Inicialmente, o usuário deverá ser registrar informando seus dados: nome, cidade, idade, sexo, ect. 
 A partir das informações fornecidas, o aplicativo fornecerá as vacinas que devem ser tomadas, com suas respectivas datas e razões. Ao tomar a vacina, o usuário atualiza a sua carteira digital.
 Periodicamente o usuário receberá notificações alertando sobre datas de vacinação. 
 
@@ -66,7 +58,7 @@ O aplicativo será gratuito.
 
 **2.1  Situação Atual**
 
-Atualmente, os brasileiro possuem a carteira de vacina física, que está sujeita a perdas, deterioração e rasuras, essa é a única forma oficial de fazer controle de vacinação individual. Algumas empresas com a Pfizer criaram aplicativos informativos sobre vacinas, porém esse não é direcionado ao público brasileiro. 
+Atualmente, os brasileiro possuem a carteira de vacina física, que está sujeita a perdas, deterioração e rasuras, essa é a única forma oficial de fazer controle de vacinação individual. Algumas empresas com a Pfizer criaram aplicativos informativos sobre vacinas, porém esses não são direcionados ao público brasileiro. 
 
 **2.2  Escopo**
 
@@ -111,7 +103,7 @@ O sistema possui três tipos de atores, sendo eles:
 | RF 02| O sistema deve ser desenvolvido para mobile.| Interoperabilidade |
 | RF 03| O sistema deve dispor de design responsivo.| Usabilidade |
 | RF 04| O sistema deve utilizar o padrão UML 2.0 para a documentação.| Padrões |
-| RF 05| O sistema deve utilizar a linguagem de programação Javascript e Dart.| Portabilidade |
+| RF 05| O sistema deve utilizar as linguagens de programação Javascript e Dart.| Portabilidade |
 | RF 06| A interface do sistema deve ser de fácil manipulação.| Usabilidade | 
 | RF 07| Os dados do usuário cliente serão trafegados no sistema de banco de dados utilizando criptografia de dados. | Segurança |
 
