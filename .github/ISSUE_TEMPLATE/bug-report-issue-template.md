@@ -10,7 +10,7 @@ assignees: ''
 ## Histórico de Versões
 | Versão  |  Data  | Autor  |  Descrição  |
 | ------------------- | ------------------- | ------------------- | ------------------- |
-|  1.0 |  26/02/2020 | Carlos Daniel | Issue template |
+|  1.0 |  26/02/2021 | Carlos Daniel | Issue template |
 |   |   |   |   |
 
 
