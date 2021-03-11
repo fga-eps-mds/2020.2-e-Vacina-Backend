@@ -4,7 +4,7 @@
 Share work development in small and concise *commits*, so that each commit implements one feature.
 
 ### *Commits* in English
-The commmits' messages pattern must be done in **English**, in order to make the project more accessible to the global public. 
+The commits' messages pattern must be done in **English**, in order to make the project more accessible to the global public. 
 
 ### Rule 50/72
 The messages must contain maximum 50 characters. If a better message is needed, add a new blank line and describe better the commit using the amount of lines necessary.
@@ -29,7 +29,7 @@ The anatomy of the commit must follow this following pattern:
 -   Maximum 50 characters.
 -   Scope type must be lowercase. 
 
-Exemple:
+Example:
 
 `fix(#13): route correction /login`.
 
@@ -44,14 +44,15 @@ The values allowed for `type`  are:
 
 ### Body
 
-If it's necessary to give a context to the commit and explain the reasons of the changes, writte in the commit's body following the rule:
+If it's necessary to give a context to the commit and explain the reasons of the changes, write in the commit's body following the rule:
 
 -   Must contain the reason of the change and what was changed.
 -   Maximum of 72 characters per line.
 
-Exemple:
+Example:
 
 ```
-refactor(#28): change in registration button 
+refact(#28): change in registration button 
 
 The button was not intuitive
+```
