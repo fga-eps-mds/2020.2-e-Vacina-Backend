@@ -1,6 +1,7 @@
 - Documentação
     - [Documento de Arquitetura](./wiki/documento_arquitetura.md)
     - [Documento de Visão](./wiki/documento_visao.md)
+    - [Backlog](./wiki/backlog.md)
 - Sprints planning
     - [Sprint 0](./wiki/Sprint0/documento_sprint0.md)
     - [Sprint 1](./wiki/Sprint1/documento_sprint1.md)
