@@ -138,7 +138,7 @@ A documentação de caso de uso visa especificar o comportamento do sistema do p
 
 |     Casos de uso         |    Autor    | Realização |
 |------------------------- | ----------- | ----------- |
-|Realizar cadastro         |   Usuário   | O usuário deve cadastrar seu cpf, data de nascimento, email e senha opcional. |
+|Realizar cadastro         |   Usuário   | O usuário deve cadastrar seu nome, CPF, data de nascimento, sexo, email e senha opcional. |
 |Realizar login            |   Usuário   | O usuário irá preencher seu email e senha informados no cadastro. |
 |Recuperar senha           |   Usuário   | O usuário receberá um email de confirmação e poderá criar uma nova senha. |
 |Criar carteira de vacina  |   Usuário   | O usuário deve informar todas as vacinas já tomadas e suas respectivas datas. |
@@ -168,6 +168,7 @@ O aplicativo baseia-se em uma arquitetura de objetos que possuem uma relação d
   O Backend é baseado completamente em Node.js, JavaScript e MongoDB.
 
   ![Backend](../assets/backend.png)
+
 <!-- ## 6. Tamanho e Desempenho
 ## 7. Qualidade
 ### 7.1 Precisão
