@@ -11,29 +11,17 @@ Duração: 00/00 à 00/00
 |  Gabriel |  ✔  |  ✔  |
 |  Erick |  ✔  |  ✔  |
 |  Paulo Vitor | ✔    |  ✔  |
-
-### Daily Meeting
-| Membros | Segunda-feira | Terça-Feira | Quarta-feira 
-|--|--|--|--|
-| Ciro Costa | ✔ | ✔ | ✔ |
-| Carlos Daniel | ✔ | ✔ | ✔ |
-| Carlos Eduardo | ✔ | ✔ | ✔ |
-| Gabriel | ✔ | ✔ | ✔ |
-| Erick | ✔ | ✔ | ✔ |
-| Paulo Vitor | ✔ | ✔ | ✔ |
-
-## Quadro de conhecimento
-![Quadro Resumo] imagem do quadro resumo
+|  Guilherme  | ✔ | ✔ |
 
 ## Status das Tarefas no Fim da Sprint
 | **Issue** | **História** | **Resposáveis** | **Status** |
 |--|--|--|--|
-|  []() |   |   |   |
-|  []() |   |   |   |
-|  []() |   |   |   |
-|  []() |   |   |   |
-|  []() |   |   |   |
-|  []() |   |   |   |
+|  |   |   |   |
+|  |   |   |   |
+|  |   |   |   |
+|  |   |   |   |
+|  |   |   |   |
+|  |   |   |   |
 
 
 - Pontos do planning:  
