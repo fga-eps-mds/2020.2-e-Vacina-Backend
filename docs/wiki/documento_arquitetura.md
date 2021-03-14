@@ -4,6 +4,7 @@
 |  1.0 |  26/02/2020 | Ciro Costa, Gabriel Luiz |  Criação documento de arquitetura |
 |  1.1 |  05/03/2021 | Guilherme Rogelin, Erick |  Adição de tópicos e correção |
 |  1.2 |  08/03/2021 | Guilherme Rogelin, Erick |  Adição de tópicos |
+|  1.3 |  14/03/2021 | Guilherme Rogelin, Erick |  Correção de diagramas |
 
 
 
