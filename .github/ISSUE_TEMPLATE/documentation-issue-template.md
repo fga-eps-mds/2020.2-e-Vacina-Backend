@@ -1,7 +1,7 @@
 ---
-name: issue template
-about: Template basico das Issues
-title: Issue tittle
+name: Issue de documentação
+about: Template para criação de uma issue de documentação
+title: ''
 labels: ''
 assignees: ''
 
@@ -10,7 +10,7 @@ assignees: ''
 ## Histórico de Versões
 | Versão  |  Data  | Autor  |  Descrição  |
 | ------------------- | ------------------- | ------------------- | ------------------- |
-|  1.0 |  04/03/2020 | Paulo Vitor| Issue template |
+|  1.0 |  04/03/2021 | Paulo Vitor| Issue template |
 |   |   |   |   |
 
 

@@ -3,14 +3,6 @@
 | ------------------- | ------------------- | ------------------- | ------------------- |
 |  1.0 |  25/02/2020 | Carlos Daniel, Paulo Vitor |  Documento de visão |
 |  1.1 |  26/02/2020 | Carlos Daniel, Paulo Vitor  |  Requisitos funcionais e não funcionais |
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
 
 
 ## Sumário
@@ -29,6 +21,7 @@
 ### 1.  Introdução
 
 **1.1  Propósito do Documento de Requisitos**  
+
 Este documento tem como propósito apresentar o aplicativo e-Vacina: uma carteira digital de vacinação. Além disso, também serão apresentados seus requisitos funcionais e não-funcionais e diagramas. Por fim, descriação do produto, interfaces e comportamentos esperados do sistema.
 
 **1.2  Público Alvo**  
@@ -55,6 +48,7 @@ O aplicativo será usado periodicamente em períodos de vacinção.
 
 **Como será utilizada**
 
+
 Inicialmente, o usuário deverá se registrar informando seus dados: nome, cidade, idade, gênero, ect. 
 A partir das informações fornecidas, o aplicativo fornecerá as vacinas que devem ser tomadas, com suas respectivas datas e razões. Ao tomar a vacina, o usuário atualiza a sua carteira digital.
 Periodicamente o usuário receberá notificações alertando sobre datas de vacinação. 
@@ -66,7 +60,9 @@ O aplicativo será gratuito.
 
 **2.1  Situação Atual**
 
+
 Atualmente, os brasileiro possuem a carteira de vacina física, que está sujeita a perdas, deterioração e rasuras, essa é a única forma oficial de fazer controle de vacinação individual. Algumas empresas como a Pfizer criaram aplicativos informativos sobre vacinas, porém esse não é direcionado ao público brasileiro. 
+
 
 **2.2  Escopo**
 
@@ -111,7 +107,7 @@ O sistema possui dois tipos de atores, sendo eles:
 | RF 02| O sistema deve ser desenvolvido para mobile.| Interoperabilidade |
 | RF 03| O sistema deve dispor de design responsivo.| Usabilidade |
 | RF 04| O sistema deve utilizar o padrão UML 2.0 para a documentação.| Padrões |
-| RF 05| O sistema deve utilizar a linguagem de programação Javascript e Dart.| Portabilidade |
+| RF 05| O sistema deve utilizar as linguagens de programação Javascript e Dart.| Portabilidade |
 | RF 06| A interface do sistema deve ser de fácil manipulação.| Usabilidade | 
 | RF 07| Os dados do usuário cliente serão trafegados no sistema de banco de dados utilizando criptografia de dados. | Segurança |
 
