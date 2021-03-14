@@ -32,9 +32,14 @@ Duração: 2/03/2021 à 09/03/2021
 |**#39**| Atualizar documento de visão| Carlos Daniel, Carlos Eduardo| A fazer |
 |**#44**| Estudar Planning Poker| Todos | A fazer |
 |**#45**| Estudar tipos de elicitação de requisitos| Paulo , Erick, Guilherme | A fazer |
-|**#46**| Criar roadmap| Todos| A fazer |
 |**#48**| Atualizar documento de arquitetura| Erick, Gabriel | A fazer |
 |**#49**| Adicionar contribuiting| Ciro | A fazer |
+|**#54**| Deletar a branch gh-page | Ciro | A fazer |
+|**#56**| Arrumar os documentos das sprints | Ciro | A fazer |
+
   
 ## Pareamento
- Sem pareamento
+  - Carlos Daniel, Carlos Eduardo e Paulo
+  - Guilherme, Gabriel
+  - Carlos Daniel, Carlos Eduardo
+  - Erick, Gabriel

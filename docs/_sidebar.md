@@ -7,8 +7,9 @@
     - [Sprint 1](./wiki/Sprint1/documento_sprint1.md)
     - [Sprint 2](./wiki/Sprint2/documento_sprint2.md)
     - [Sprint 3](./wiki/Sprint3/documento_sprint3.md)
+    - [Sprint 4](./wiki/Sprint4/documento_sprint4.md)
 - Sprints review
     - [Sprint 0](./wiki/Sprint0/result_sprint0.md)
     - [Sprint 1](./wiki/Sprint1/result_sprint1.md)
     - [Sprint 2](./wiki/Sprint2/result_sprint2.md)
-    <!-- - [Sprint 3](./wiki/Sprint3/result_sprint3.md) -->
+    - [Sprint 3](./wiki/Sprint3/result_sprint3.md)
