@@ -11,6 +11,6 @@
 
 ## 1. Protótipo de Alta Fidelidade
 ![Telas iniciais](img/initial-screens.jpg)
-![Tela de carteira de vacina](img/carteiras.jpg)
+![Tela de carteira de vacina](img/carteira.jpg)
 ![Tela de configurações](img/config.jpg)
 ![Tela de pesquisa](img/pesquisa.jpg)
