@@ -135,6 +135,6 @@ Os requisitos foram levantados usando a metodologia MoSCoW (Must, Should, Could,
 
 ![Casos de Uso](../img/casos-de-uso.jpg)
 
-![Diagrama de Classes](../img/diagrama-de-classes.jpg)
+![Diagrama de Classes](../img/diagrama-de-classes.jpeg)
 
 
