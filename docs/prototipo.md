@@ -10,6 +10,6 @@
 <br>
 
 ## 1. Protótipo de Alta Fidelidade
-![Telas iniciais](img/initial-screens.jpg)
-![Tela Vacina](img/vacinas-screens.jpg)
-![Tela de Usuários](img/user-config.jpg)
+![Telas iniciais](assets/initial-screens.jpg)
+![Tela Vacina](assets/vacinas-screens.jpg)
+![Tela de Usuários](assets/user-config.jpg)
