@@ -5,6 +5,7 @@
 |  1.1 |  05/03/2021 | Guilherme Rogelin, Erick |  Adição de tópicos e correção |
 |  1.2 |  08/03/2021 | Guilherme Rogelin, Erick |  Adição de tópicos |
 |  1.3 |  14/03/2021 | Guilherme Rogelin, Erick |  Correção de diagramas |
+|  1.4 |  18/03/2021 | Paulo, Erick |  Correção do diagrama do Front-end e ortogáfica |
 
 
 
@@ -18,8 +19,8 @@
 [2. **Representação Arquitetural**](#_2-Representação-Arquitetural)
 - [2.1 Diagrama de Relações](#_21-Diagrama-de-Relações)
 - [2.2 Representação dos Serviços](#_22-Representação-dos-Serviços)
-- [2.2.1 Frontend](#_221-Frontend)
-- [2.2.2 Backend](#_222-Backend)
+- [2.2.1 Front-end](#_221-Front-end)
+- [2.2.2 Back-end](#_222-Back-end)
 - [2.3 Tecnologias](#_23-Tecnologias)
 - [2.3.1 Flutter](#_231-Flutter)
 - [2.3.2 Node.js](#_232-Nodejs)
@@ -34,12 +35,12 @@
 [4. **Visão de Casos de Uso**](#_4-Visão-de-Casos-de-Uso)
 - [4.1. Realização de Casos de Uso](#_41-Realização-de-Casos-de-Uso)  
 
-[5. Visão Lógica](#_5-Visão-Lógica)
+[5. **Visão Lógica**](#_5-Visão-Lógica)
 - [5.1. Visão Geral](#_51-Visão-Geral)
 - [5.2. Pacotes de Design Significativos do Ponto de Vista da Arquitetura](#_52-Pacotes-de-Design-Significativos-do-Ponto-de-Vista-da-Arquitetura)
 - [5.3. Visão da Implantação](#_53-Visão-da-Implantação)
-- [5.3.1 Frontend](#_531-Frontend)
-- [5.3.2 Backend](#_532-Backend)
+- [5.3.1 Front-end](#_531-Front-end)
+- [5.3.2 Back-end](#_532-Back-end)
 
 <!-- 6. Tamanho e Desempenho
 7. Qualidade
@@ -56,10 +57,10 @@
 ## 1. Introdução
 
 ### 1.1 Finalidade
-Este documento tem como finalidade fornecer uma visão geral da arquitetura do e-vacina, utilizando-se de diversas visões arquiteturais a fim de facilitar o entendimento dos processos e funcionamento de todo o sistema. Tem também como objetivo transmitir as decisões arquiteturais significativas tomadas em relação ao mesmo.
+Este documento tem como finalidade fornecer uma visão geral da arquitetura do e-Vacina, utilizando-se de diversas visões arquiteturais a fim de facilitar o entendimento dos processos e funcionamento de todo o sistema. Tem também como objetivo transmitir as decisões arquiteturais significativas tomadas em relação ao mesmo.
 
 ### 1.2 Escopo
- Através desse documento, é possível obter um melhor entendimento da arquitetura do e-vacina, permitindo ao leitor compreender o funcionamento de seu sistema, como também a abordagem utilizada para o seu desenvolvimento.
+ Através desse documento, é possível obter um melhor entendimento da arquitetura do e-Vacina, permitindo ao leitor compreender o funcionamento de seu sistema, como também a abordagem utilizada para o seu desenvolvimento.
 
 ### 1.3 Definições, Acrônimos e Abreviações
 
@@ -80,14 +81,14 @@ O diagrama representa uma arquitetura cliente-servidor que divide a aplicação 
 
 Cada módulo será feito em repositórios diferentes com configurações diferentes.
 ###  2.2 Representação dos Serviços
-#### 2.2.1 Frontend
- Frontend do e-vacina é responsavel por toda a interação com o usuário. Ele apresenta uma interface gráfica que habilita o usuário a usar todas as funções do sistema.
+#### 2.2.1 Front-end
+ Front-end do e-Vacina é responsavel por toda a interação com o usuário. Ele apresenta uma interface gráfica que habilita o usuário a usar todas as funções do sistema.
 
-Interagindo com o Frontend o usuário terá acesso ao núcleo das funcionalidades do e-vacina, sendo elas principalmente: checar dados de vacinas, checar caderno de vacinação, entrar e criar usuarios, marcar vacinas tomadas, ver vacinas tomadas. 
+Interagindo com o Front-end o usuário terá acesso ao núcleo das funcionalidades do e-Vacina, sendo elas principalmente: checar dados de vacinas, checar caderno de vacinação, entrar e criar usuarios, marcar vacinas tomadas, ver vacinas tomadas. 
 
 
-#### 2.2.2 Backend
-  O Backend do e-vacina é o responsável pela funcionalidade das principais características do sistema. Através de requisições feitas pelo Frontend, o Backend irá realizar as pesquisas feitas pelo usuário, armazenar e editar contas de usuários, vacinas, caderno de vacinação e autenticação de usuário.
+#### 2.2.2 Back-end
+  O Back-end do e-Vacina é o responsável pela funcionalidade das principais características do sistema. Através de requisições feitas pelo Front-end, o Back-end irá realizar as pesquisas feitas pelo usuário, armazenar e editar contas de usuários, vacinas, caderno de vacinação e autenticação de usuário.
 
 ### 2.3 Tecnologias
  #### 2.3.1 Flutter
@@ -105,9 +106,9 @@ Interagindo com o Frontend o usuário terá acesso ao núcleo das funcionalidade
 O projeto possui como objetivo uma carteira de vacinação digital que irá facilitar o controle de vacinas da população geral.
 
 ### 3.2 Restrições Tecnológicas
-Para o desenvolvimento do e-vacina serão utitilizados as seguintes tecnologias:
+Para o desenvolvimento do e-Vacina serão utitilizados as seguintes tecnologias:
 
-Flutter: SDK de frontend para a criação do app;
+Flutter: SDK de Front-end para a criação do app;
 
 Dart: Linguagem para desenvolvimento com Flutter;
 
@@ -155,20 +156,20 @@ A documentação de caso de uso visa especificar o comportamento do sistema do p
 O aplicativo baseia-se em uma arquitetura de objetos que possuem uma relação dinâmica entre si, o que permite o acesso de funcionalidades entre pacotes e classes e facilita a manutenção. O usuário interage com o cadastro, que irá verificar se já existe algum usuário cadastrado com aquelas informações, ou interage com o login, que irá buscar as informações preenchidas em um banco de dados e permitirá o acesso ao aplicativo. Em seguida ele interage com as vacinas, podendo editar sua carteira de vacinação, verificar validade de suas vacinas e acompanhar campanhas de vacinação.
 
 ###  5.2. Pacotes de Design Significativos do Ponto de Vista da Arquitetura  
-  A aplicação no Front End será feita em Flutter. No diagrama abaixo mostra como será a estrutura básica de pacotes do nosso aplicativo.   
-  ![Pacotes Frontend](../assets/diagrama_pacotes_front.png)  
-  O Back End será feito em NodeJs. No diagrama abaixo mostra como será a estrutura básica de pacotes
-  ![Pacotes Backend](../assets/diagrama_pacotes_back.png)
+  A aplicação no Front-end será feita em Flutter. No diagrama abaixo mostra como será a estrutura básica de pacotes do nosso aplicativo.   
+  ![Pacotes Front-end](../assets/diagrama_pacotes_front.png)  
+  O Back-end será feito em NodeJs. No diagrama abaixo mostra como será a estrutura básica de pacotes
+  ![Pacotes Back-end](../assets/diagrama_pacotes_back.png)
 
 ###  5.3. Visão da Implantação 
-  ####  5.3.1 Frontend 
-  O Frontend é baseado completamente linguagem Dart juntamente com o Flutter.
+  ####  5.3.1 Front-end 
+  O Front-end é baseado completamente linguagem Dart juntamente com o Flutter.
 
-  ![Frontend](../assets/frontend.png)  
-  ####  5.3.1 Backend
-  O Backend é baseado completamente em Node.js, JavaScript e MongoDB.
+  ![Front-end](../assets/frontend.png)  
+  ####  5.3.1 Back-end
+  O Back-end é baseado completamente em Node.js, JavaScript e MongoDB.
 
-  ![Backend](../assets/backend.png)
+  ![Back-end](../assets/backend.png)
 
 <!-- ## 6. Tamanho e Desempenho
 ## 7. Qualidade
