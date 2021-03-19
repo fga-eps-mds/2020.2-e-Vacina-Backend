@@ -2,8 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const http = require('http');
 const cors = require('cors');
-const routes = require('./routes');
-
+const routes = require('./routes/BaseRoute');
 const app = express();
 const server = http.Server(app);
 
