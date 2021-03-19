@@ -11,7 +11,6 @@ module.exports = {
     
     if(emailCheck.length>0)response.send("Email already registered");
     else if(phoneNumberCheck.length>0)response.send("Phone number already registered");
-    else if(password.length<6||password.length>12) response.send("Password doesn't meet requeriments");
     
     else{
 
