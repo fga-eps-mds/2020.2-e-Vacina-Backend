@@ -1,37 +1,52 @@
 const User = require('../models/User');
-const bcrypt = require('bcryptjs');
 
-module.exports = {
-
-  async create(request, response){
-    const {email, password, phoneNumber} = request.body;
-
-    const emailCheck = await User.find({email:email});
-    const phoneNumberCheck = await User.find({phoneNumber:phoneNumber});
+ async function createUser(request,response){
+  const {email, password, phoneNumber} = request.body;
     
-    if(emailCheck.length>0)response.send("Email already registered");
-    else if(phoneNumberCheck.length>0)response.send("Phone number already registered");
+  try {
+   
+      const checkEmail = await User.findOne({email:email});
+      const checkPassword = await User.findOne({phoneNumber:phoneNumber});
+
+      if(await User.findOne({email:email})!=null)
+        response.status(400).send({error:'Email already registered'});
+
+      else if(await User.findOne({password:password})!=null)
+        response.status(400).send({error:'Cellphone number already registered'});
+      
+      else{
+        const newUser = new User(request.body);
+        newUser.password = undefined;
+        response.send({newUser});
+      }
     
-    else{
 
-      const newUser = new User({ //creating new user
-        email: email,
-        password: password,
-        phoneNumber: phoneNumber
-      });
+  } catch (error) {
+    response.status(400).send({error: 'Registration failed'});
+  }
 
-      //hashing password
-      const salt = await bcrypt.genSalt(10);
-      newUser.password = await bcrypt.hash(newUser.password, salt);
-      
-      const savedUser = await newUser.save();
-      response.send(savedUser);
-      
-    }
+}
 
-  },
+async function getUserById(request, response){
+  try {
+    const user = await User.findById(request.params.userId);
+    response.send({ user });
+    
+  } catch (error) {
+    response.status(400).send({error: 'User not found'});
+  }
+  
+}
 
-  async index(request, response){
-    response.send("You request a user with this email:" + request.body.email);
+async function listUsers(response){
+  
+  try{
+    const users = await User.find();
+    response.send({users});
+
+  }catch(error){
+    response.status(400).send({error: 'Failed to list users'});
   }
 }
+
+module.exports = { createUser, getUserById, listUsers};
