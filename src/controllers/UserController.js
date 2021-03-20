@@ -1,5 +1,6 @@
 const User = require('../models/User');
 
+
  async function createUser(request,response){
   const {email, password, phoneNumber} = request.body;
     
@@ -16,10 +17,11 @@ const User = require('../models/User');
       
       else{
         const newUser = new User(request.body);
-        newUser.password = undefined;
-        response.send({newUser});
+        const savedUser = await newUser.save();
+        savedUser.password = undefined;
+        response.send({savedUser});
       }
-    
+      
 
   } catch (error) {
     response.status(400).send({error: 'Registration failed'});
@@ -27,21 +29,30 @@ const User = require('../models/User');
 
 }
 
+
 async function getUserById(request, response){
+
   try {
     const user = await User.findById(request.params.userId);
-    response.send({ user });
+    
+    if(user!=null) response.send({ user });
+    response.status(400).send({error: 'User not found'});
     
   } catch (error) {
-    response.status(400).send({error: 'User not found'});
+    response.status(400).send({error: 'Failed to look for user'});
   }
   
 }
 
-async function listUsers(response){
-  
+
+async function listUsers(request, response){
+
   try{
-    const users = await User.find();
+    const users = await User.find({});
+
+    users.forEach(user => {
+      user.password = undefined;
+    });
     response.send({users});
 
   }catch(error){
@@ -49,4 +60,4 @@ async function listUsers(response){
   }
 }
 
-module.exports = { createUser, getUserById, listUsers};
+module.exports = {createUser, getUserById, listUsers};
