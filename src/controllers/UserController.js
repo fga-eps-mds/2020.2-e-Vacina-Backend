@@ -6,25 +6,25 @@ const User = require('../models/User');
     
   try {
    
-      const checkEmail = await User.findOne({email:email});
-      const checkPassword = await User.findOne({phoneNumber:phoneNumber});
+    const checkEmail = await User.findOne({email:email});
+    const checkPassword = await User.findOne({phoneNumber:phoneNumber});
 
-      if(await User.findOne({email:email})!=null)
-        response.status(400).send({error:'Email already registered'});
+    if(await User.findOne({email:email})!=null)
+      response.status(400).send({error:'Email already registered'});
 
-      else if(await User.findOne({password:password})!=null)
-        response.status(400).send({error:'Cellphone number already registered'});
-      
-      else{
-        const newUser = new User(request.body);
-        const savedUser = await newUser.save();
-        savedUser.password = undefined;
-        response.send({savedUser});
-      }
+    else if(await User.findOne({password:password})!=null)
+      response.status(400).send({error:'Cellphone number already registered'});
+    
+    else{
+      const newUser = new User(request.body);
+      const savedUser = await newUser.save();
+      savedUser.password = undefined;
+      response.send({savedUser});
+    }
       
 
   } catch (error) {
-    response.status(400).send({error: 'Registration failed'});
+      response.status(400).send({error: 'Registration failed'});
   }
 
 }
@@ -39,7 +39,7 @@ async function getUserById(request, response){
     response.status(400).send({error: 'User not found'});
     
   } catch (error) {
-    response.status(400).send({error: 'Failed to look for user'});
+      response.status(400).send({error: 'Failed to look for user'});
   }
   
 }
