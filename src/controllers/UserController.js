@@ -5,14 +5,26 @@ const User = require('../models/User');
     
   try {
 
-      const newUser = new User(request.body);
-      const savedUser = await newUser.save();
-      savedUser.password = undefined;
-      response.send({savedUser});
+      //avoiding duplicate user in database
+      const {email, phoneNumber} = request.body;
+
+      if(await User.findOne({ email }))
+        return response.status(400).send({error: 'Email already exists'});
+      
+      else if(await User.findOne({phoneNumber}))
+        return response.status(400).send({error: 'PhoneNumber already exists'})
+
+      //registering new user
+      else{
+        const newUser = new User(request.body);
+        const savedUser = await newUser.save();
+        savedUser.password = undefined;
+        response.send({savedUser});
+      }
           
 
   } catch (error) {
-      response.status(400).send({error: error.message});
+      response.status(400).send({error: 'Failed to register user: ' + error.message});
   }
 }
 
@@ -22,15 +34,14 @@ async function getUserById(request, response){
   try {
     const user = await User.findById(request.params.userId);
     
-    if(user!=null) 
+    if(user!=null)
       response.send({ user });
-
-    else 
-      response.status(400).send({error: 'User not found'});
-
+    
+    else
+      response.status(400).send({error:'User not found'});
     
   } catch (error) {
-      response.status(400).send({error: 'Failed to look for user'});
+      response.status(400).send({error: 'User ID is wrong format'});
   } 
 }
 
@@ -49,25 +60,50 @@ async function listUsers(request, response){
 
 
 async function updateUser(request, response){
+//this code will work only if the clients send exclusively the modified fields in the body
+
   try{
+    
+    const {email, phoneNumber} = request.body;
+    //avoiding duplicate user in database
+    if(email!=null && await User.findOne({ email }))
+      return response.status(400).send({error: 'Email already exists'});
+  
+    else if(phoneNumber!=null && await User.findOne({phoneNumber}))
+      return response.status(400).send({error: 'PhoneNumber already exists'})
+
  
     //updating user
-    const id = request.params.userId;
-    const upadate = request.body;
-    const options = {new: true};
+    else{
+      const id = request.params.userId;
+      const upadate = request.body;
+      const options = {new: true};
 
-    const updatedUser = await User.findByIdAndUpdate(id, upadate, options);
-
-    if(updatedUser!=null)
-      response.send({updatedUser});
+      const updatedUser = await User.findByIdAndUpdate(id, upadate, options);
+      
+      if(updatedUser!=null)
+        response.send({updatedUser});
+      
+      else
+        response.status(400).send({error: 'User not found, check id again'});
+      
+    }
     
-    else
-      response.status(400).send({error:'User not found'});
-  
-
-  }catch(error){ //if client sends an email/phoneNumber already registered, or Id sent is not in expected format
-    response.status(400).send({error: error.message});
+  }catch(error){   
+    response.status(400).send({error: 'Failed to update user, maybe the id is wrong format: ' + error.message});
   }
 }
 
-module.exports = {createUser, getUserById, listUsers, updateUser};
+
+async function deleteUser(request, response){
+  try{
+    const id = request.params.userId;
+    await User.findByIdAndDelete(id);
+    response.send({message: 'Successfully deleted use with id: ' + id});
+  }
+  catch(error){
+    response.status(400).send({error: 'Failed to delete user : ' + error.message});
+  }
+}
+
+module.exports = {createUser, getUserById, listUsers, updateUser, deleteUser};
