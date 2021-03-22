@@ -8,22 +8,7 @@ const routes = express.Router();
 routes.get('/', UserController.listUsers);
 routes.get('/:userId', UserController.getUserById);
 routes.post('/', UserController.createUser);
+routes.put('/:userId', UserController.updateUser);
 
-/*
-routes.post('/', (requisition, response) => {
-    UserController.createUser(requisition, response)   
-});
-
-routes.post('/authenticate', (requisition, response) => {
-    
-});
-
-routes.put('/:userId',  (req, response) => {
-    
-});
-
-routes.delete('/:userId', (req, response) => {
-   
-});*/
 
 module.exports = routes;
