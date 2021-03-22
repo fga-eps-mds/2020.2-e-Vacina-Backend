@@ -4,6 +4,7 @@
 |Autor|Mudanças|Data|Versão|
 |--|--|--|--|
 |[Carlos Daniel](https://github.com/luiz-herique), [Ciro Costa](https://github.com/ciro-c)|Criação do documento|11/03/21|1.0|
+|[Carlos Daniel](https://github.com/luiz-herique), [Guilherme](https://github.com/GRVial)|Atualização do documento|22/03/21|1.1|
 
 
 ## Histórias de Usuário
@@ -56,7 +57,6 @@ Este épico determina as histórias que formarão as funcionalidade relacionadas
 |US18|Eu, como usuário, desejo ser capaz deletar os dados de uma conta do banco, caso eu não queira usar mais aquela conta|Must|
 |US20|Eu, como usuário, desejo ser capaz de ter mais de uma conta associada ao meu usuário|could|
 |US21|Eu, como usuário, desejo ser capaz de mudar de contas associadas ao meu usuário|could|
-
 
 ## Épico 02 - Vacina
 
@@ -119,3 +119,4 @@ Este épico determina as histórias que formarão as funcionalidades relacionada
 |ID|História de Usuário|Prioridade|
 |--|--|--|
 |US40|Eu, como usuário, desejo ser capaz de usar o aplicativo no modo escuro|Would|
+
