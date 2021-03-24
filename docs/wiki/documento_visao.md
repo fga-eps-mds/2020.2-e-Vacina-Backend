@@ -107,6 +107,7 @@ O sistema possui dois tipos de atores, sendo eles:
 |  RF 21  |  O sistema deve permitir que o usuário imprima o cartão de vacina. |Essencial|
 |  RF 22  |  O sistema deve permitir que o usuário mude entre as contas associadas ao usuário.|Essencial|
 |  RF 23  |  O sistema deve notificar o usuário quando datas de vacinações se aproximarem. |Essencial|
+|  RF 24  |  O sistema deve permitir que o usuário realize login e logout. |Essencial|
 
 
 **3.2 Requisitos Não Funcionais**
