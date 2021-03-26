@@ -25,15 +25,14 @@ Duração: 16/03 à 23/03
 ## Backlog
 | Issue | Descrição | Pontuação | Responsáveis | Status | Prioridade | Repositório |
 | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |------------------- |------------------- | 
-|   | Atualizar documento de Visão | 2 | Carlos Daniel, Guilherme |  A fazer | * | Back-end |
-|   | Atualizar documento de arquitetura | 1 | Paulo, Erick | A fazer  | * | Back-end  |
-|   | Atualizar prototipo de alta fidelidade | 2 | Carlos Eduardo, Gabriel | A fazer  | * | * |
-|   | US01 - Criar Usuário  | 5 | Carlos Daniel, Gabriel  | A fazer | Must | Back-end |
-|   | US02-04 Criar rotas de Put,Delete e Update  | 3 | Carlos Eduardo,Carlos Daniel  | A fazer  | Must  | Back-end  |
-|   | US05 - Criar Pagina de registro de Usuário | 3 | Guilherme, Erick  | A fazer  | Must  |   |
-|   | US06-08 Criar Página de Configuração de Usuário | 3 | Ciro, Paulo | A fazer  | Must  | Front-end  |
-|   | Criar página de Login  | 3 | Ciro, Paulo, Guilherme, Erick | A fazer  | Must | Front-end  |
-
+|**#85**| Atualizar Documento de Visão | 2 | Carlos Daniel, Guilherme |  A fazer | * | Back-end |
+|**#86**| Atualizar documento de arquitetura | 1 | Paulo, Erick | A fazer  | * | Back-end  |
+|**#87**| Atualizar Protótipo de Alta Fidelidade | 2 | Carlos Eduardo, Gabriel | A fazer  | * | * |
+|**#88**| Criar Usuário no Backend (US01)  | 5 | Carlos Daniel, Gabriel  | A fazer | Must | Back-end |
+|**#89**| Criar rotas PUT e DELETE para Usuário (US02 - US04)  | 3 | Carlos Eduardo,Carlos Daniel  | A fazer  | Must  | Back-end  |
+|**#90**| Desenvolver Tela de Registro de Usuário (US05) | 3 | Guilherme, Erick  | A fazer  | Must  |   |
+|**#91**| Desenvolver Tela de Configuração do Usuário (US06-08) | 3 | Ciro, Paulo | A fazer  | Must  | Front-end  |
+|**#92**|Revisar o Backlog do produto. | 2 | Carlos Daniel, Guilherme | A fazer | * | Back-end |
 
 ## Pareamento
 - Ciro, Paulo

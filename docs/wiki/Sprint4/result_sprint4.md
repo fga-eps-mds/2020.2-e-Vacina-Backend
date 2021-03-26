@@ -10,7 +10,7 @@ Duração: 09/03 à 16/03
 |  Carlos Eduardo |  ✔  |  X  |
 |  Gabriel |  ✔  |  X  |
 |  Erick |  ✔  |  ✔  |
-|  Paulo Vitor | ✔    |  ✔  |
+|  Paulo Vitor |  ✔   |  ✔  |
 |  Guilherme  | ✔ | ✔ |
 
 ## Status das Tarefas no Fim da Sprint
