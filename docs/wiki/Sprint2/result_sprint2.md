@@ -1,14 +1,15 @@
 ## Período
 Duração: 23/02/2021  à 02/03/2021
 
-## Monitoramento e Controle
 ### Presenças Sprint Plaining + Sprint Review
-
-    Sem lista presença
-
-### Daily Meeting
-
-    Sem dailys
+| Membros  |  Planning  |Review  |
+| ------------------- | ------------------- |------------------- |
+|  Ciro Costa |   ✔  |   ✔  |
+|  Carlos Daniel |  ✔  |  ✔  |
+|  Carlos Eduardo |  ✔  |  ✔  |
+|  Gabriel |  ✔  |  ✔  |
+|  Erick |  ✔  |  ✔  |
+|  Paulo Vitor | ✔    |  ✔  |
 
 
 ## Status das Tarefas no Fim da Sprint
@@ -28,11 +29,9 @@ Duração: 23/02/2021  à 02/03/2021
 |**#43**| Ciro | A fazer| 
 
 
-
-
 - Pontos do planning:  Sem pontos
 - Pontos entregues: Sem pontos
-- Dívida da sprint: 
+- Dívida da sprint: #21 #40 #41 #42 #43
 
 ## Retrospectiva
 #### Pontos positivos
