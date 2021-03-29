@@ -80,55 +80,49 @@ O sistema possui dois tipos de atores, sendo eles:
 
 ## 3. Requisitos
 
-Os requisitos foram levantados usando a metodologia MoSCoW (Must, Should, Could, Would).
+**3.1 Requisitos Funcionais**
 
-|ID|Descrição|Prioridade|
-|--|--|--|
-|US01| Criar um usuário na plataforma com os dados: email, telefone e senha.|must|
-|US02| Visualizar os dados de um usuário no banco, para que eu possa saber quem está cadastrado.|must| 
-|US03| Rota para os usuários atualizarem seus dados.|must|
-|US04| Rota para deletar usuários|must|
-|US05| Cadastrar no e-Vacina para fazer o controle de vacinação e dos dependentes.|must|
-|US06| Visualizar os dados no e-Vacina.|must| 
-|US07| Atualizar meus dados de acordo com as necessidades.|must| 
-|US08| Deletar os meus dados do banco, caso não queira usar mais o aplicativo.|must|
-|US09| Criar uma conta na plataforma com os dados: Nome, cpf, Sexo, data de nascimento.|must|
-|US10| Visualizar os dados de uma conta no banco, para que se possa saber quem está cadastrado.|must| 
-|US11| Rota para os usuários atualizarem os dados das contas.|must|
-|US12| Criar uma rota para deletar contas.|must|
-|US13| Cadastrar uma conta no e-Vacina |must|
-|US14| Visualizar os dados de uma conta no e-Vacina.|must| 
-|US15| Atualizar os dados de uma conta de acordo com necessidades.|must| 
-|US16| Deletar os dados de uma conta do banco, caso eu não queira usar mais aquela conta.|must|
-|US19| Cadastrar vacinas no banco com os campos: nome, doencas_previnidas, contra_indicacoes, idade, doses, periocidade.|Must|
-|US20| Atualizar os dados das vacinas caso seja necessário.|Must|
-|US21| Deletar vacinas do banco caso seja necessário.|Must|
-|US22| Listar as vacinas do banco de dados caso seja necessário.|must|
-|US23| Verificar o número de doses das vacinas tomadas.|Must|
-|US24| Atualizar o número de doses tomadas de uma vacina.|Must|
-|US25| Visualizar as informações das vacinas tomadas.|Must|
-|US26| Visualizar as informações das vacinas.|Must|
-|US27| Rota para adicionar vacinas à carteira de vacinação.|must|
-|US28| Rota para excluir vacinas do cartão de vacinas.|must|
-|US29| Adicionar vacinas à carteira de vacina.|must|
-|US30| Visualizar as vacinas da carteira de vacina.|must|
-|US31| Excluir vacinas da carteira de vacina.|must|
-|US39| O sistema deve ser desenvolvido para mobile.|must|
-|US32| Os dados dos usuários clientes serão gravados no sistema de banco de dados utilizando criptografia de dados.|should|
-|US33| Associar as carteiras de vacinas a suas contas.|should|
-|US34| O sistema deve dispor de design responsivo.|should|
-|US35| Os dados do usuário cliente serão trafegados no sistema de banco de dados utilizando criptografia de dados. |should|
-|US36| O sistema deve utilizar o padrão UML 2.0 para a documentação.|could|
-|US37| O sistema deve utilizar a linguagem de programação Javascript e Dart.|could|
-|US38| A interface do sistema deve ser de fácil manipulação.|could| 
-|US39| Os dados do usuário cliente serão trafegados no sistema de banco de dados utilizando criptografia de dados. |could|
-|US40| Ter mais de uma conta associada ao usuário.|could|
-|US41| Mudar de contas associadas ao usuário.|could|
-|US42| Imprimir  cartão de vacina.|would|
-|US43| Rota para buscar vacinas de acordo com os parâmetros de pesquisa.|would| 
-|US44| Buscar por vacinas no aplicativo, por parâmetros.|would|
-|US45| Notificar quando as datas de vacinações se aproximarem.|would|
-|US46| Aplicativo no modo escuro.|would|
+|ID| Descrição| Prioridade|
+| ------------------- | ------------------- | ------------------- |
+|  RF 01  |  O sistema deve permitir ao usuário administrador cadastrar vacinas.|Essencial|
+|  RF 02  |  O sistema deve permitir ao usuário administrador cadastrar campanhas de vacinas.|Essencial|
+|  RF 03  |  O sistema deve permitir que o usuário administrador possa visualizar os dados de um usuário no banco, para que possa saber quem está cadastrado.|Essencial|
+|  RF 04  |  O sistema deve permitir que o usuário administrador atualize os dados das vacinas.|Essencial|
+|  RF 05  |  O sistema deve permitir que o usuário administrador delete vacinas. |Essencial|
+|  RF 06  |  O sistema deve permitir ao usuário cadastrar vacinas que já foram aplicadas, informando a data.|Essencial|
+|  RF 07  |  O sistema deve permitir que o usuário exclua vacinas do cartão de vacinas.|Essencial|
+|  RF 08  |  O sistema deve permitir ao usuário visualizar informações sobre vacinas.|Essencial|
+|  RF 09  |  O sistema deve notificar o usuário de campanhas de vacinação e vacinas pendentes e fazer agendamentos|Essencial|
+|  RF 10  |  O sistema deve permitir uma interface diferenciada ao usuário administrador.|Essencial|
+|  RF 11  |  O sistema deve permitir uma interface específica ao usuário cliente.|Essencial|
+|  RF 12  |  O sistema deve permitir que o usuário realize um cadastro pessoal.|Essencial|
+|  RF 13  |  O sistema deve permitir que o usuário realize o cadastro de mais de uma conta associada ao usuário.|Essencial|
+|  RF 14  |  O sistema deve permitir que o usuário atualize seus dados.|Essencial|
+|  RF 15  |  O sistema deve permitir que o usuário possa deletar uma conta associada ao usuário principal. |Essencial|
+|  RF 16  |  O sistema deve permitir que o usuário possa deletar sua conta |Essencial|
+|  RF 17  |  O sistema deve permitir que o usuário verifique o número de doses das vacinas tomadas.|Essencial|
+|  RF 18  |  O sistema deve permitir que o usuário visualize as informações das vacinas tomadas. |Essencial|
+|  RF 19  |  O sistema deve permitir que o usuário visualize as informações das vacinas. |Essencial|
+|  RF 20  |  O sistema deve permitir que o usuário busque por vacinas no aplicativo, por parâmetros.|Essencial|
+|  RF 21  |  O sistema deve permitir que o usuário imprima o cartão de vacina. |Essencial|
+|  RF 22  |  O sistema deve permitir que o usuário mude entre as contas associadas ao usuário.|Essencial|
+|  RF 23  |  O sistema deve notificar o usuário quando datas de vacinações se aproximarem. |Essencial|
+|  RF 24  |  O sistema deve permitir que o usuário realize login e logout. |Essencial|
+
+
+**3.2 Requisitos Não Funcionais**
+
+|ID| Descrição| Prioridade|
+| ------------------- | ------------------- | ------------------- |
+| RNF 01| Os dados dos usuários clientes serão gravados no sistema de banco de dados utilizando criptografia de dados.| Segurança |
+| RNF 02| O sistema deve ser desenvolvido para mobile.| Interoperabilidade |
+| RNF 03| O sistema deve dispor de design responsivo.| Usabilidade |
+| RNF 04| O sistema deve utilizar o padrão UML 2.0 para a documentação.| Padrões |
+| RNF 05| O sistema deve utilizar a linguagem de programação Javascript e Dart.| Portabilidade |
+| RNF 06| A interface do sistema deve ser de fácil manipulação.| Usabilidade | 
+| RNF 07| Os dados do usuário cliente serão trafegados no sistema de banco de dados utilizando criptografia de dados. | Segurança |
+
+
 
 ## 4. Casos de usos e Diagrama de Classes  
 
