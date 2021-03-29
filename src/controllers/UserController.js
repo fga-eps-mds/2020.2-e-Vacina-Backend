@@ -63,7 +63,6 @@ async function updateUser(request, response){
 //this code will work only if the clients send exclusively the modified fields in the body
 
   try{
-    
     const {email, phoneNumber} = request.body;
     //avoiding duplicate user in database
     if(email!=null && await User.findOne({ email }))
@@ -76,13 +75,11 @@ async function updateUser(request, response){
     //updating user
     else{
       const id = request.params.userId;
-      const upadate = request.body;
+      const update = request.body;
       const options = {new: true};
-
-      const updatedUser = await User.findByIdAndUpdate(id, upadate, options);
-      
-      if(updatedUser!=null)
-        response.send({updatedUser});
+      const updtedUser = await User.findByIdAndUpdate(id, update, options);
+      if(updtedUser!=null)
+        response.send({updtedUser});
       
       else
         response.status(400).send({error: 'User not found, check id again'});
