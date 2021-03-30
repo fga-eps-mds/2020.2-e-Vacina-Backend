@@ -39,4 +39,7 @@ Duração: 23/02/2021 à 02/03/2021
 | **#43** | Criar documento Sprint 3. | Ciro | A fazer | 
   
 ## Pareamento
- Sem pareamento
+ - Ciro e Gabriel
+ - Ciro e Carlos Daniel
+ - Paulo e Carlos Daniel
+ - Carlos Daniel e Carlos Eduardo

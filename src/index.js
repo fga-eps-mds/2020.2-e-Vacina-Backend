@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const http = require('http');
 const cors = require('cors');
-
+const routes = require('./routes/BaseRoute');
 const app = express();
 const server = http.Server(app);
 
@@ -23,12 +23,13 @@ mongoose.connect('mongodb://mongodb:27017/e-vacina', {
 
 
 
-app.get('/', (req, res) => {
-  res.send("Hello, from docker container");
-})
 
-
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
+app.use(routes);
 
-server.listen(3000);
+const port = 3000 || process.env.PORT; // whatever is in the environment variable PORT, or 3000 if there's nothing there.
+server.listen(3000, ()=> {
+    console.log("Listening on port: " + port);
+});

@@ -3,13 +3,16 @@
 ## Histórico de Versões
 | Versão  |  Data  | Autor  |  Descrição  |
 | ------------------- | ------------------- | ------------------- | ------------------- |
-|  1.0 |  08/03/2020 | Carlos Daniel |  Protótipo de Alta Fidelidade |
+|  1.0 |  08/03/2021 | Carlos Daniel |  Protótipo de Alta Fidelidade |
+|  1.1 |  27/03/2021 | Erick, Paulo | Atualização do Protótipo de Alta Fidelidade |
 
 
 
 <br>
 
 ## 1. Protótipo de Alta Fidelidade
-![Telas iniciais](img/initial-screens.jpg)
-![Tela Vacina](img/vacinas-screens.jpg)
-![Tela de Usuários](img/user-config.jpg)
+![Print1](assets/Screen1.png)
+![Print2](assets/Screen2.png)
+![Print3](assets/Screen3.png)
+![Print4](assets/Screen4.png)
+![Print5](assets/Screen5.png)
