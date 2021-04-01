@@ -36,8 +36,7 @@ $ docker-compose up --build
 ## Equipe
  Matricula|  Aluno
  ---|---
- 190011408|Carlos Daniel  
- 190011424|Carlos Eduardo 
+ 190011408|Carlos Daniel   
  190011611|Ciro Costa 
  190027355|Erick  
  190013354|Gabriel Luiz  
