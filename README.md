@@ -29,6 +29,10 @@ $ cd 2020.2-e-Vacina-Backend
 ```bash
 $ docker-compose up --build
 ```
+## Apresentações
+
+[Apresentação da Realese 1](https://youtu.be/3epp9Zc3qPY)
+
 ## Equipe
  Matricula|  Aluno
  ---|---
