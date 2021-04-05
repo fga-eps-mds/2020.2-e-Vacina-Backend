@@ -1,3 +1,12 @@
+---
+name: Template para a review.
+about: Template para o registro de reviews.
+title: Review.
+labels: ''
+assignees: ''
+
+---
+
 ## Período
 Duração: 00/00 à 00/00
 

@@ -1,7 +1,7 @@
 ---
 name: Issue para dúvitas
 about: Template para expor qualquer dúvida.
-title: ''
+title: Question.
 labels: ''
 assignees: ''
 
