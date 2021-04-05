@@ -1,7 +1,7 @@
 ---
 name: issue template
 about: Template basico das Issues
-title: Issue tittle
+title: Task
 labels: ''
 assignees: ''
 

@@ -1,7 +1,7 @@
 ---
 name: Discussion issue
 about: Template de levantamento de discussão
-title: Issue tittle
+title: Discussion.
 labels: ''
 assignees: ''
 

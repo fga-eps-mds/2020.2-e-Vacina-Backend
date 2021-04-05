@@ -1,7 +1,7 @@
 ---
 name: Issue de reportar BUG
 about: Template para reportar qualquer bug encontrado no sistema.
-title: ''
+title: Bug report.
 labels: ''
 assignees: ''
 
