@@ -18,6 +18,11 @@ const VacineSchema = new mongoose.Schema({
     required: true
   },
 
+  numberOfDosesTaken:{
+    type: Number,
+    required: true
+  },
+
   preventDeseases:{
     type: [String],
     required: true,
@@ -25,6 +30,11 @@ const VacineSchema = new mongoose.Schema({
 
   recommendations:{
     type: [String],
+    required: true,
+  },
+
+  periodicity:{
+    type: Number,
     required: true,
   }
   
