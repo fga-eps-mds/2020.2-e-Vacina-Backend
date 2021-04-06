@@ -1,7 +1,7 @@
 ---
 name: Issue para reportar falhas de seguranças.
 about: Template para reportar qualquer falha de segurança encontrada no sistema.
-title: ''
+title: Security breach.
 labels: ''
 assignees: ''
 

@@ -1,7 +1,7 @@
 ---
 name: Issue de documentação
 about: Template para criação de uma issue de documentação
-title: ''
+title: Documentation.
 labels: ''
 assignees: ''
 
