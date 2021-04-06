@@ -8,7 +8,10 @@ const routes = express.Router();
 
 
 routes.post('/', VacineController.createVacine);
-
+routes.get('/', VacineController.listVacines);
+routes.get('/:vacineId', VacineController.getVacineById);
+routes.put('/:vacineId', VacineController.updateVacine);
+routes.delete('/:vacineId', VacineController.deleteVacine);
 
 
 module.exports = routes;
