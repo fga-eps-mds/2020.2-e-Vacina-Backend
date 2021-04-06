@@ -47,7 +47,8 @@ async function getVacineById(request, response){
 async function updateVacine(request, response){
   try{
  
-  //updating user
+  //updating vacine
+
     const id = request.params.vacineId;
     const update = request.body;
     const options = {new: true};
