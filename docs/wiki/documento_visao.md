@@ -128,5 +128,5 @@ O sistema possui dois tipos de atores, sendo eles:
 
 ![Casos de Uso](../assets/casos-de-uso.jpg)
 
-![Diagrama de Classes](../assets/diagrama-de-classes.jpeg)
+![Diagrama de Classes](../assets/diagrama-de-classes.png)
 

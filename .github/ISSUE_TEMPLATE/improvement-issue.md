@@ -1,7 +1,7 @@
 ---
 name: Improvement template
 about: Template de melhoria de de funcionalidade
-title: Issue tittle
+title: Improvement.
 labels: ''
 assignees: ''
 

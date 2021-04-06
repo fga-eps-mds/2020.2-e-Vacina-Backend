@@ -1,3 +1,12 @@
+---
+name: Template do planning.
+about: Template para o registro do planning.
+title: Planning.
+labels: ''
+assignees: ''
+
+---
+
 ## Período
 Duração: 00/00 à 00/00
 

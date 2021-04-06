@@ -77,7 +77,9 @@ São apresentados nesse documento os detalhes arquiteturais de como o sistema de
 ###  2.1 Diagrama de Relações
 ![Diagrama de relações](../assets/diagrama_de_relacoes.png)
 
-O diagrama representa uma arquitetura cliente-servidor que divide a aplicação em dois módulos, sendo um para os clientes, responsáveis por sua execução, e o outro para o servidor, contendo seus processos executados em um servidor. A comunicação entre os módulos é feita por requisições HTTP.  
+O diagrama representa uma arquitetura cliente-servidor que divide a aplicação em dois módulos, sendo um para os clientes, responsáveis por sua execução, e o outro para o servidor, contendo seus processos executados em um servidor. A comunicação entre os módulos é feita por requisições HTTP. 
+
+O banco de dados pegara os dados das vacinas de uma planilha de excel no drive do grupo.
 
 Cada módulo será feito em repositórios diferentes com configurações diferentes.
 ###  2.2 Representação dos Serviços
