@@ -14,23 +14,24 @@ Duração: 23/03 à 30/03
 
 ## Mapa do conhecimento  
 
-<!-- ![Mapa do conhecimento](../../assets/MapaConhecimentoSprint6.png)  -->
+<!-- ![Mapa do conhecimento](../../assets/MapaConhecimentoSprint7.png)  -->
 
 
 ## Status das Tarefas no Fim da Sprint
 | **Issue** | **História** | **Resposáveis** | **Status** |
 |--|--|--|--|
-|**#90**| US05 | Guilherme, Erick | Done |
-|**#91**| US06 | Ciro, Paulo | Done |
-|**#99**| US10 | Ciro, Guilherme | Done | 
-|**#100**| * | Ciro, Erick | Done | 
-|**#101**| * | Ciro, Gabriel | Done  |    
 |**#102**| US09 | Carlos Daniel, Gabriel | Done |
-|**#103**| * | Erick, Paulo | Done  |
-|**#104**| * |  Paulo  | Done | 
+|**#112**| US05 | Carlos, Paulo | Done |
+|**#113**| US06 | Gabriel, Guilherme | Done |
+|**#114**| US10 | Carlos, Erick | Done | 
+|**#115**| * | Ciro, Paulo | Done | 
+|**#116**| * | Erick | Done  |    
+|**#117**| US09 | Ciro | Done |
+|**#118**| * | Ciro | Done  |
+|**#119**| * |  Ciro, Guilherme  | Done | 
 
-- Pontos do planning: ?
-- Pontos entregues: ?
+- Pontos do planning: 24
+- Pontos entregues: ? + 5
 - Dívida da sprint: Nenhuma
 
 

@@ -28,14 +28,14 @@ Duração: 30/03 à 06/04
 ## Backlog
 | Issue | Descrição | Pontuação | Responsáveis | Status | Prioridade | Repositório |
 | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |------------------- |------------------- | 
-|**#**| Criar CRUD Vacina | 3 | Carlos, Paulo |  A fazer | Must | Back-end |
-|**#**| Criar Splash Screen | 2 | Gabriel, Guilherme | A fazer  | Must | Front-end  |
-|**#**| Criar tela informações perfil | 3 | Carlos, Erick | A fazer  | Must | Front-end |
-|**#**| Fazer logica log in log out  | 8 | Ciro, Paulo | A fazer  | Must | Front-end |
-|**#**| Atualizar os documentos | 1 | Ciro | A fazer  | * | Back-end |
-|**#**| Atualizar os read.me e templates | 1 | Erick | A fazer | * | Front-end, Back-end |
-|**#**| Estudar testes unitario  | 3 | Ciro | A fazer | * | * |
-|**#**| Estudar fluxo de Ci | 3 | Ciro, Guilherme | A fazer | * | * |
+|**#112**| Criar CRUD Vacina | 3 | Carlos, Paulo |  A fazer | Must | Back-end |
+|**#113**| Criar Splash Screen | 2 | Gabriel, Guilherme | A fazer  | Must | Front-end  |
+|**#114**| Criar tela informações perfil | 3 | Carlos, Erick | A fazer  | Must | Front-end |
+|**#115**| Fazer logica log in log out  | 8 | Ciro, Paulo | A fazer  | Must | Front-end |
+|**#116**| Atualizar os read.me e templates | 1 | Erick | A fazer | * | Front-end, Back-end |
+|**#117**| Atualizar os documentos | 1 | Ciro | A fazer  | * | Back-end |
+|**#118**| Estudar testes unitario  | 3 | Ciro | A fazer | * | * |
+|**#119**| Estudar fluxo de Ci | 3 | Ciro, Guilherme | A fazer | * | * |
 
 
 ## Pareamento
@@ -43,4 +43,4 @@ Duração: 30/03 à 06/04
 - Ciro, Paulo
 - Carlos, Erick
 - Gabriel, Guilherme
-- Carlos, Paulo
+- Carlos, Paulo  
