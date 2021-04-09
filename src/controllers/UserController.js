@@ -3,7 +3,7 @@ const User = require('../models/User');
 
  async function createUser(request,response){
     
-  try {
+  try { 
 
       //avoiding duplicate user in database
       const {email, phoneNumber} = request.body;
