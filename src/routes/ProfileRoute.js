@@ -9,8 +9,10 @@ const routes = express.Router();
 
 
 routes.post('/:userId', AuthMiddleware ,ProfileController.createProfile);
-routes.get('/:userId', AuthMiddleware, ProfileController.listProfiles);
-
+routes.get('/list/:userId', AuthMiddleware, ProfileController.listProfiles);
+routes.get('/:profileId', AuthMiddleware, ProfileController.getProfileById);
+routes.put('/:profileId', AuthMiddleware, ProfileController.updateProfile);
+routes.delete('/:profileId/user/:userId', AuthMiddleware, ProfileController.deleteProfile);
 
 
 
