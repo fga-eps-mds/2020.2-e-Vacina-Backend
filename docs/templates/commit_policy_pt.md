@@ -1,3 +1,12 @@
+---
+name: Política de commit.
+about: Template para a criação de commits.
+title: Commit policy pt.
+labels: ''
+assignees: ''
+
+---
+
 # Politica de Commits
 
 ### *Commits* Atômicos

@@ -1,7 +1,7 @@
 ---
 name: Issue de Estudo
 about: Template para criação de uma issue de estudo
-title: 
+title: Study.
 labels: ''
 assignees: ''
 
