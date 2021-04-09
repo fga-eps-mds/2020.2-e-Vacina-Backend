@@ -182,11 +182,11 @@ Expected Response:
 ```json:
 {
   "savedProfile": {
-    "_id": "60707f4584035d002a77ce56",
-    "name": "Carlos Daniel",
-    "cpf": "06462233133",
-    "birthDate": "2000-11-09T00:00:00.000Z",
-    "sex": "male",
+    "_id": "{profileId}",
+    "name": "{name}",
+    "cpf": "{cpf}",
+    "birthDate": "{birthDate}",
+    "sex": "{sex}",
     "__v": 0
   }
 }
