@@ -54,7 +54,7 @@ Expected Response:
       "__v": 0
     },
     {
-      "profilesIds": {profilesIds},
+      "profilesIds": "{profilesIds}",
       "_id": "{userId}",
       "email": "{email}",
       "phoneNumber": "{phoneNumber}",
@@ -172,7 +172,7 @@ Body:
 {
   "name": "{name}",
   "cpf": "{cpf}",
-  "birthDate:" "{birthDate}",
+  "birthDate": "{birthDate}",
   "sex": "{sex}"
 }
 ```
@@ -293,5 +293,194 @@ Expected Response:
 {
   "message": "Successfully deleted user
   with id: {profileId}",
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Vacine
+
+### CreateVacine:
+
+Route:
+```
+POST localhost:PORT/vacine
+```
+
+Body:
+```json:
+{
+	"name": "{name}",
+	"description": "{description}",
+	"numberOfDoses": "{numberOfDoses}",
+	"numberOfDosesTaken": "{numberOfDosesTaken}",
+	"preventDeseases": "{preventDeseases}",
+	"recommendations": "{recommendations}",
+	"periodicity": "{periodicity}"
+}
+```
+
+Expected Response:
+```json:
+{
+  "savedVacine": {
+    "preventDeseases": [
+      "{preventDeseases}"
+    ],
+    "recommendations": [
+      "{recommendations}"
+    ],
+    "_id": "{vacineId}",
+    "name": "{name}",
+    "description": "{description}",
+    "numberOfDoses": {numberOfDoses},
+    "numberOfDosesTaken": {numberOfDosesTaken},
+    "periodicity": {periodicity},
+    "__v": 0
+  }
+}
+```
+
+### ListVacines
+
+Route:
+```
+GET localhost:PORT/vacine
+```
+
+Expected Response:
+```json:
+{
+  "vacines": [
+    {
+      "preventDeseases": [
+        "{preventDeseases}"
+      ],
+      "recommendations": [
+        "{recommendations}"
+      ],
+      "_id": "{vacineId}",
+      "name": "{name}",
+      "description": "{description}",
+      "numberOfDoses": {numberOfDoses},
+      "numberOfDosesTaken": {numberOfDosesTaken},
+      "periodicity": {periodicity},
+      "__v": 0
+    },
+    {
+      "preventDeseases": [
+        "{preventDeseases}"
+      ],
+      "recommendations": [
+        "{recommendations}"
+      ],
+      "_id": "{vacineId}",
+      "name": "{name}",
+      "description": "{description}",
+      "numberOfDoses": {numberOfDoses},
+      "numberOfDosesTaken": {numberOfDosesTaken},
+      "periodicity": {periodicity},
+      "__v": 0
+    }
+  ]  
+}
+```
+
+### GetVacineById
+
+Route:
+```
+GET localhost:PORT/vacine/{vacineId}
+```
+
+Expected Response:
+```json:
+{
+  "vacine": {
+    "preventDeseases": [
+      "{preventDeseases}"
+    ],
+    "recommendations": [
+      "{recommendations}"
+    ],
+    "_id": "{vacineId}",
+    "name": "{name}",
+    "description": "{description}",
+    "numberOfDoses": {numberOfDoses},
+    "numberOfDosesTaken": {numberOfDosesTaken},
+    "periodicity": {periodicity},
+    "__v": 0
+  }  
+}
+```
+
+### UpdateVacine
+
+Route:
+```
+PUT localhost:PORT/vacine/{vacineId}
+```
+
+Body:
+```json:
+{
+  "name": "{name}",
+}
+```
+NOTE: Only send in the body the fields you want to update.
+
+Expected Response:
+```json:
+{
+  "vacine": {
+    "preventDeseases": [
+      "{preventDeseases}"
+    ],
+    "recommendations": [
+      "{recommendations}"
+    ],
+    "_id": "{vacineId}",
+    "name": "{name}",
+    "description": "{description}",
+    "numberOfDoses": {numberOfDoses},
+    "numberOfDosesTaken": {numberOfDosesTaken},
+    "periodicity": {periodicity},
+    "__v": 0
+  }  
+}
+```
+
+### DeleteVacine
+
+Route:
+```
+DELETE localhost:PORT/vacine/{vacineId}
+```
+
+Expected Response:
+```json:
+{
+  "message": "Successfully deleted use with id: {vacineId}"
 }
 ```
