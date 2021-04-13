@@ -1,5 +1,5 @@
 ## Período
-Duração: 23/03 à 30/03
+Duração: 06/04 à 13/04
 
 ## Monitoramento e Controle
 ### Presenças Sprint Plaining + Sprint Review
@@ -7,46 +7,43 @@ Duração: 23/03 à 30/03
 | ------------------- | ------------------- |------------------- |
 |  Ciro Costa |   ✔  |   ✔  |
 |  Carlos Daniel |  ✔  |  ✔  |
-|  Gabriel |  X  |  ✔  |
+|  Gabriel |  X  |  X  |
 |  Erick |  ✔  |  ✔  |
 |  Paulo Vitor | ✔ |  ✔  |
 |  Guilherme  | ✔ | ✔ |
 
 ## Mapa do conhecimento  
 
-<!-- ![Mapa do conhecimento](../../assets/MapaConhecimentoSprint7.png)  -->
+![Mapa do conhecimento](../../assets/MapaConhecimentoSprint8.png)
 
 
 ## Status das Tarefas no Fim da Sprint
 | **Issue** | **História** | **Resposáveis** | **Status** |
 |--|--|--|--|
-|**#102**| US09 | Carlos Daniel, Gabriel | Done |
-|**#112**| US05 | Carlos, Paulo | Done |
-|**#113**| US06 | Gabriel, Guilherme | Done |
-|**#114**| US10 | Carlos, Erick | Done | 
-|**#115**| * | Ciro, Paulo | Done | 
-|**#116**| * | Erick | Done  |    
-|**#117**| US09 | Ciro | Done |
-|**#118**| * | Ciro | Done  |
-|**#119**| * |  Ciro, Guilherme  | Done | 
+|**#124**| (US11 - US15) | Carlos, Erick | Done |
+|**#125**| (US26-US29) | Ciro, Guilherme | Done |
+|**#126**| * | Erick | Done |
+|**#127**| * | Ciro, Gabriel | Done | 
+|**#128**| * | Guilherme, Paulo | Done | 
+|**#129**| * | Paulo, Carlos | Done  |    
+|**#130**| * | Gabriel | Done |
 
-- Pontos do planning: 24
-- Pontos entregues: ? + 5
+
+- Pontos do planning: 
+- Pontos entregues: 
 - Dívida da sprint: Nenhuma
 
 
 
 ## Retrospectiva
 #### Pontos positivos
-- 
-- 
-- 
+- Acabei um issue.
+- Comecei minhas issues bem cedo e consegui terminar todas
 
 #### Pontos negativos
-- 
-- 
-- 
-- 
+- Acabei ficando com uma issue que não sabia nada sobre e ficou como divida técnica
+- Mais um membro retirou a matéria e saiu do grupo
+- Não terminei outra issue
 
 #### Dívidas técnicas
 - Nenhuma
