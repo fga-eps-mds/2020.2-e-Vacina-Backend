@@ -7,11 +7,11 @@ async function createVacine(request, response){
   try{
     const newVacine = new Vacine(request.body);
     const savedVacine = await newVacine.save();
-    response.send({savedVacine: savedVacine});
+    return response.send({savedVacine: savedVacine});
  
   }
   catch(error){
-    response.status(500).send({error: error});
+    return response.status(500).send({error: error});
   }
 
 }
@@ -21,10 +21,10 @@ async function createVacine(request, response){
 async function listVacines(request, response){
   try{
     const vacines = await Vacine.find({});
-    response.send({vacines: vacines});
+    return response.send({vacines: vacines});
   }
   catch(error){
-    response.status(500).send({error: error})
+    return response.status(500).send({error: error})
   }
 }
 
@@ -34,13 +34,13 @@ async function getVacineById(request, response){
     const vacine = await Vacine.findById(request.params.vacineId);
     
     if(vacine!=null)
-      response.send({ vacine });
+      return response.send({ vacine });
     
     else
-      response.status(400).send({error:'Vacine not found'});
+      return response.status(400).send({error:'Vacine not found'});
     
   } catch (error) {
-      response.status(400).send({error: 'Vacine ID is wrong format'});
+      return response.status(400).send({error: 'Vacine ID is wrong format'});
   } 
 }
 
@@ -54,13 +54,13 @@ async function updateVacine(request, response){
     const options = {new: true};
     const updtedVacine = await Vacine.findByIdAndUpdate(id, update, options);
     if(updtedVacine!=null)
-      response.send({updtedVacine});
+      return response.send({updtedVacine});
     
     else
-      response.status(400).send({error: 'Vacine not found, check id again'});
+      return response.status(400).send({error: 'Vacine not found, check id again'});
     
   }catch(error){   
-    response.status(400).send({error: 'Failed to update vacine, maybe the id is wrong format: ' + error.message});
+    return response.status(400).send({error: 'Failed to update vacine, maybe the id is wrong format: ' + error.message});
   }
 }
 
@@ -68,10 +68,10 @@ async function deleteVacine(request, response){
   try{
     const id = request.params.vacineId;
     await Vacine.findByIdAndDelete(id);
-    response.send({message: 'Successfully deleted use with id: ' + id});
+    return response.send({message: 'Successfully deleted use with id: ' + id});
   }
   catch(error){
-    response.status(400).send({error: 'Failed to delete Vacine : ' + error.message});
+    return response.status(400).send({error: 'Failed to delete Vacine : ' + error.message});
   }
 }
 
