@@ -4,17 +4,15 @@
  async function createTakenVaccine(request, response){
 
    try{
-     const { userId, vaccineId } = request.body;
-     const test =await TakenVaccine.find({userId,vaccineId});
-     if(test ){
-       // return response.status(400).send({error: 'Vaccine already taken'}); 
+     const { profileId, vaccineId } = request.body;
+     if( (await TakenVaccine.find({profileId,vaccineId}) ).length !== 0){
         return response.send({test});
      }
     
      const takenVaccine = await TakenVaccine.create(request.body);
     
      return response.send({takenVaccine});
- }
+   }
    catch(error){
      response.status(400).send({error: error});
    }
