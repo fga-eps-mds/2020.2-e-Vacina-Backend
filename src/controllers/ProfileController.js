@@ -2,7 +2,6 @@ const express = require('express');
 const Profile = require('../models/Profile');
 const User = require('../models/User');
 
-// https://e-vacina/profile/userId
 async function createProfile(request, response){
   try{
     
