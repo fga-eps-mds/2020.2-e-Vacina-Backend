@@ -16,3 +16,6 @@
 ![Print3](assets/Screen3.png)
 ![Print4](assets/Screen4.png)
 ![Print5](assets/Screen5.png)
+![Print6](assets/Screen6.png)
+![Print7](assets/Screen7.png)
+![Print8](assets/Screen8.png)

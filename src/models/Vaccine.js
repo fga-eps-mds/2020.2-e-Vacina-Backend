@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const VacineSchema = new mongoose.Schema({
+const VaccineSchema = new mongoose.Schema({
   
   name: {
     type: String,
@@ -14,11 +14,6 @@ const VacineSchema = new mongoose.Schema({
   },
 
   numberOfDoses:{
-    type: Number,
-    required: true
-  },
-
-  numberOfDosesTaken:{
     type: Number,
     required: true
   },
@@ -41,6 +36,6 @@ const VacineSchema = new mongoose.Schema({
 });
 
 
-const Vacine = mongoose.model("Vacine", VacineSchema);
+const Vaccine = mongoose.model("Vaccine", VaccineSchema);
 
-module.exports = Vacine;
+module.exports = Vaccine;
