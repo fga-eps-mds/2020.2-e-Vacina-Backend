@@ -2,29 +2,28 @@ const express = require('express');
 const Profile = require('../models/Profile');
 const User = require('../models/User');
 
-// https://e-vacina/profile/userId
 async function createProfile(request, response){
   try{
     
     const userId = request.params.userId; //get user
     const currentUser=  await User.findById(userId);
-    if(currentUser==null) response.status(400).send({error: 'User not found. Check id again'});   
-    // await User.findOne({ email })
-    const {cpf} = request.body;
-    if(await Profile.findOne({cpf:cpf})) return response.status(400).send({error: 'CPF already exists'});
-    
-    const newProfile = new Profile(request.body); //creates new profiles
-    const savedProfile = await newProfile.save();
-    const newProfileId = savedProfile.id;
+    if(!currentUser) 
+      return response.status(400).send({error: 'User not found. Check id again'});   
 
-    const profilesIds = currentUser.profilesIds; //get profiles ids
-    profilesIds.push(newProfileId);
+    const {cpf} = request.body;
+    if(await Profile.findOne({cpf:cpf}))
+     return response.status(400).send({error: 'CPF already exists'});
+    
+    const newProfile = await Profile.create(request.body); 
+
+    const profilesIds = currentUser.profilesIds;
+    profilesIds.push(newProfile.id);
 
     const update = {profilesIds: profilesIds};
     const options = {new: true}
-    await User.findByIdAndUpdate(userId, update, options); //updating user
+    await User.findByIdAndUpdate(userId, update, options);
     
-    return response.send(savedProfile);
+    return response.send({newProfile});
 
   }
 
@@ -38,8 +37,9 @@ async function getProfileById(request, response){
     const id = request.params.profileId;
     const profile = await Profile.findById(id);
     
-    if(profile==null) return response.status(400).send({error: 'Profile not found'});
-    else return response.send({profile: profile});
+    if(!profile)
+     return response.status(400).send({error: 'Profile not found'});
+    return response.send({profile: profile});
 
   }
   catch(error){
@@ -47,17 +47,18 @@ async function getProfileById(request, response){
   }
 }
 
-async function listProfiles(request, response){
+async function listProfilesByUser(request, response){
     try{
 
-        const userId = request.params.userId; //get user
-        const currentUser=  await User.findById(userId);
-        if(currentUser==null) response.status(400).send({error: 'User not found. Check id again'}); 
+        const userId = request.params.userId;
+        const currentUser =  await User.findById(userId);
+        if(!currentUser)
+         return response.status(400).send({error: 'User not found. Check id again'}); 
 
         const profilesIds = currentUser.profilesIds;
         const profiles = await Profile.find().where('_id').in(profilesIds);
           
-        return response.send({profiles: profiles});
+        return response.send({profiles});
 
     }
     catch(error){
@@ -71,14 +72,14 @@ async function updateProfile(request, response){
     const profileId = request.params.profileId;
     const {cpf} = request.body;
 
-    if(await Profile.findOne({cpf:cpf})) return response.status(400).send({error: 'CPF already exists'});
+    if(await Profile.findOne({cpf:cpf}))
+     return response.status(400).send({error: 'CPF already exists'});
 
     const update = request.body;
     const options = {new: true}
     const updatedProfile = await Profile.findByIdAndUpdate(profileId, update, options);
 
-    
-    return response.send({updatedProfile: updatedProfile});
+    return response.send({updatedProfile});
 
   }
   catch(error){
@@ -91,32 +92,29 @@ async function deleteProfile(request, response){
   try{  
     const profileId = request.params.profileId;
     
-    if(! await Profile.findById(profileId)) return response.status(400).send({error: 'Profile not found'});
-    
-    await Profile.findByIdAndDelete(profileId);
-
+    if( !(await Profile.findById(profileId)) )
+     return response.status(400).send({error: 'Profile not found'});
     
     const userId = request.params.userId;
-    const user = await User.findById(userId);  //updating profile ids list in User
+    const user = await User.findById(userId);  
     const profilesIds = user.profilesIds;  
-
+     
     for(let i = 0; i<profilesIds.length; i++){
       if(profilesIds[i]===profileId){
         profilesIds.splice(i, 1);
       }
     }
-
+      
     const update = {profilesIds: profilesIds};
     const options = {new: true}
     await User.findByIdAndUpdate(userId, update, options); 
+    await Profile.findByIdAndDelete(profileId);
     return response.send({message: 'Successfully deleted profile with id: ' + profileId});
 
-  
   }
   catch(error){
-    console.log(error);
     return response.status(400).send({error: error});
   }
 }
 
-module.exports = {createProfile, listProfiles, getProfileById, updateProfile, deleteProfile};
+module.exports = {createProfile, listProfilesByUser, getProfileById, updateProfile, deleteProfile};

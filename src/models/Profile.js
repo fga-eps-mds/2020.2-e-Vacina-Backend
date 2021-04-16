@@ -1,6 +1,5 @@
-const express = require('express'); //framework
-const mongoose = require('mongoose'); //driver MongoDB
-
+const express = require('express'); 
+const mongoose = require('mongoose');
 
 const ProfileSchema = new mongoose.Schema({
 
@@ -16,15 +15,13 @@ const ProfileSchema = new mongoose.Schema({
     birthDate:  {
       type: Date,
       required: true,
-      },
-
+    },
     sex:  {
       type: String,
       required: true,
     },
 
 });
-
 
 const Profile = mongoose.model("Profile", ProfileSchema);
 

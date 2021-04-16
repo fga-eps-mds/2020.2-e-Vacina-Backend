@@ -4,7 +4,7 @@
 |  1.0 |  25/02/2020 | Carlos Daniel, Paulo Vitor |  Documento de visão |
 |  1.1 |  26/02/2020 | Carlos Daniel, Paulo Vitor  |  Requisitos funcionais e não funcionais |
 |  1.2 |  13/03/2021 | Carlos Daniel, Carlos Eduardo  | Casos de uso e diagrama de classes |
-
+|  1.3 |  06/04/2021 | Ciro | Arrumando gramática e diagrama de classes|
 
 
 ## Sumário
@@ -96,16 +96,16 @@ O sistema possui dois tipos de atores, sendo eles:
 |  RF 10  |  O sistema deve permitir uma interface diferenciada ao usuário administrador.|Essencial|
 |  RF 11  |  O sistema deve permitir uma interface específica ao usuário cliente.|Essencial|
 |  RF 12  |  O sistema deve permitir que o usuário realize um cadastro pessoal.|Essencial|
-|  RF 13  |  O sistema deve permitir que o usuário realize o cadastro de mais de uma conta associada ao usuário.|Essencial|
+|  RF 13  |  O sistema deve permitir que o usuário realize o cadastro de mais de uma perfil associada ao usuário.|Essencial|
 |  RF 14  |  O sistema deve permitir que o usuário atualize seus dados.|Essencial|
-|  RF 15  |  O sistema deve permitir que o usuário possa deletar uma conta associada ao usuário principal. |Essencial|
-|  RF 16  |  O sistema deve permitir que o usuário possa deletar sua conta |Essencial|
+|  RF 15  |  O sistema deve permitir que o usuário possa deletar uma perfil associada ao usuário principal. |Essencial|
+|  RF 16  |  O sistema deve permitir que o usuário possa deletar sua perfil |Essencial|
 |  RF 17  |  O sistema deve permitir que o usuário verifique o número de doses das vacinas tomadas.|Essencial|
 |  RF 18  |  O sistema deve permitir que o usuário visualize as informações das vacinas tomadas. |Essencial|
 |  RF 19  |  O sistema deve permitir que o usuário visualize as informações das vacinas. |Essencial|
 |  RF 20  |  O sistema deve permitir que o usuário busque por vacinas no aplicativo, por parâmetros.|Essencial|
 |  RF 21  |  O sistema deve permitir que o usuário imprima o cartão de vacina. |Essencial|
-|  RF 22  |  O sistema deve permitir que o usuário mude entre as contas associadas ao usuário.|Essencial|
+|  RF 22  |  O sistema deve permitir que o usuário mude entre as perfis associadas ao usuário.|Essencial|
 |  RF 23  |  O sistema deve notificar o usuário quando datas de vacinações se aproximarem. |Essencial|
 |  RF 24  |  O sistema deve permitir que o usuário realize login e logout. |Essencial|
 

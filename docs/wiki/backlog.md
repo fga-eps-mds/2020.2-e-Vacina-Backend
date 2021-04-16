@@ -20,7 +20,7 @@ O backlog sofrerá ajustes ao longo do andamento do projeto para que as necessid
 
 ## Épico 01 - Usuário
 
-Este épico determina as histórias que formarão as funcionalidade relacionadas ao usuário, dentro dela são definidos parâmetros que um desenvolvedor deseja ter para possuir um bom gerenciamento de seus usuários. Também contém funcionalidades que um usuário deseja utilizar para realizar ações relativas às suas contas e interação geral com a aplicação.
+Este épico determina as histórias que formarão as funcionalidade relacionadas ao usuário, dentro dela são definidos parâmetros que um desenvolvedor deseja ter para possuir um bom gerenciamento de seus usuários. Também contém funcionalidades que um usuário deseja utilizar para realizar ações relativas às suas perfis e interação geral com a aplicação.
 
 ### Feature 01 - CRUD de usuário
 
@@ -43,20 +43,20 @@ Este épico determina as histórias que formarão as funcionalidade relacionadas
 |US09|Eu, como desenvolvedor, desejo criar uma rota de autenticação para meu usuário|Must| 
 |US10|Eu, como usuário, desejo ser capaz de realizar o login e o logout no aplicativo|Must| 
 
-### Feature 03 - CRUD das contas
+### Feature 03 - CRUD dos perfis
 
 |ID|História de Usuário|Prioridade|
 |--|--|--|
-|US11|Eu, como desenvolvedor, desejo ser criar uma conta na plataforma com os dados: Nome, cpf, Sexo, data de nascimento|Must|
-|US12|Eu, como desenvolvedor desejo poder visualizar os dados de uma conta no banco, para que eu possa saber quem está cadastrado |Must| 
-|US13|Eu, como desenvolvedor, desejo criar uma rota para os meus usuários atualizarem os dados das contas|Must|
-|US14|Eu, como desenvolvedor, desejo criar uma rota para deletar contas|Must|
-|US15|Eu, como usuário, desejo cadastrar uma conta no e-Vacina |Must|
-|US16|Eu, como usuário, desejo visualizar os dados de uma conta no e-Vacina|Must| 
-|US17|Eu, como usuário, desejo atualizar os dados de uma conta de acordo com minhas necessidades|Must| 
-|US18|Eu, como usuário, desejo ser capaz deletar os dados de uma conta do banco, caso eu não queira usar mais aquela conta|Must|
-|US20|Eu, como usuário, desejo ser capaz de ter mais de uma conta associada ao meu usuário|could|
-|US21|Eu, como usuário, desejo ser capaz de mudar de contas associadas ao meu usuário|could|
+|US11|Eu, como desenvolvedor, desejo ser criar uma perfil na plataforma com os dados: Nome, cpf, Sexo, data de nascimento|Must|
+|US12|Eu, como desenvolvedor desejo poder visualizar os dados de uma perfil no banco, para que eu possa saber quem está cadastrado |Must| 
+|US13|Eu, como desenvolvedor, desejo criar uma rota para os meus usuários atualizarem os dados das perfis|Must|
+|US14|Eu, como desenvolvedor, desejo criar uma rota para deletar perfis|Must|
+|US15|Eu, como usuário, desejo cadastrar uma perfil no e-Vacina |Must|
+|US16|Eu, como usuário, desejo visualizar os dados de uma perfil no e-Vacina|Must| 
+|US17|Eu, como usuário, desejo atualizar os dados de uma perfil de acordo com minhas necessidades|Must| 
+|US18|Eu, como usuário, desejo ser capaz deletar os dados de uma perfil do banco, caso eu não queira usar mais aquela perfil|Must|
+|US20|Eu, como usuário, desejo ser capaz de ter mais de um perfil associada ao meu usuário|could|
+|US21|Eu, como usuário, desejo ser capaz de mudar de perfis associadas ao meu usuário|could|
 
 ## Épico 02 - Vacina
 
@@ -66,57 +66,67 @@ Este épico determina as histórias que formarão as funcionalidades relacionada
 
 |ID|História de Usuário|Prioridade|
 |--|--|--|
-|US22|Eu, como desenvolvedor, desejo cadastrar vacinas no banco com os campos: nome, doencas_previnidas, contra_indicacoes, idade, doses, periocidade|Must|
+|US22|Eu, como desenvolvedor, desejo cadastrar vacinas no banco com os campos: dono|Must|
 |US23|Eu, como desenvolvedor, desejo atualizar os dados das vacinas caso seja necessário|Must|
 |US24|Eu, como desenvolvedor, desejo deletar vacinas do banco caso seja necessário|Must|
 |US25|Eu, como desenvolvedor, desejo listar as vacinas do banco de dados caso seja necessário|Must|
 
-### Feature 05 - Interação com as Vacinas
+### Feature 05 - CRUD de Cartão de vacinas
 
 |ID|História de Usuário|Prioridade|
 |--|--|--|
-|US26|Eu, como usuário, desejo verificar o número de doses das vacinas tomadas|Must|
-|US27|Eu, como usuário, desejo atualizar o número de doses tomadas de uma vacina|Must|
-|US28|Eu, como usuário, desejo visualizar as informações das vacinas tomadas|Must|
-|US29|Eu, como usuário, desejo visualizar as informações das vacinas|Must|
+|US26|Eu, como desenvolvedor, desejo cadastrar cartões de vacinas no banco com os campos: nome, doencas_previnidas, contra_indicacoes, idade, doses, periocidade|Must|
+|US27|Eu, como desenvolvedor, desejo atualizar os dados dos cartões de vacina caso seja necessário|Must|
+|US28|Eu, como desenvolvedor, desejo deletar um cartão de vacina do banco caso seja necessário|Must|
+|US29|Eu, como desenvolvedor, desejo listar os cartões de vacina do banco de dados caso seja necessário|Must|
 
-### Feature 06 - Carteira de Vacina
+
+### Feature 06 - Interação com as Vacinas
 
 |ID|História de Usuário|Prioridade|
 |--|--|--|
-|US30|Eu, como desenvolvedor, desejo criar uma rota para adicionar vacinas à carteira de vacinação|Must|
-|US31|Eu, como desenvolvedor, desejo criar uma rota para excluir vacinas do cartão de vacinas|Must|
-|US32|Eu, como usuário, desejo ser capaz de adicionar vacinas à carteira de vacina|Must|
-|US33|Eu, como usuário, desejo ser capaz de visualizar as vacinas da carteira de vacina|Must|
-|US34|Eu, como usuário, desejo ser capaz de excluir vacinas da carteira de vacina|Must|
-|US35|Eu, como desenvolvedor, desejo associar as carteiras de vacinas a suas contas|Should| 
-|US36|Eu, como usuário, desejo ser capaz de imprimir meu cartão de vacina|Would|
+|US30|Eu, como usuário, desejo verificar o número de doses das vacinas tomadas|Must|
+|US31|Eu, como usuário, desejo atualizar o número de doses tomadas de uma vacina|Must|
+|US32|Eu, como usuário, desejo visualizar as informações das vacinas tomadas|Must|
+|US33|Eu, como usuário, desejo visualizar as informações das vacinas|Must|
+
+### Feature 07 - Carteira de Vacina
+
+|ID|História de Usuário|Prioridade|
+|--|--|--|
+|US34|Eu, como desenvolvedor, desejo criar uma rota para adicionar vacinas à carteira de vacinação|Must|
+|US35|Eu, como desenvolvedor, desejo criar uma rota para excluir vacinas do cartão de vacinas|Must|
+|US36|Eu, como usuário, desejo ser capaz de adicionar vacinas à carteira de vacina|Must|
+|US37|Eu, como usuário, desejo ser capaz de visualizar as vacinas da carteira de vacina|Must|
+|US38|Eu, como usuário, desejo ser capaz de excluir vacinas da carteira de vacina|Must|
+|US39|Eu, como desenvolvedor, desejo associar as carteiras de vacinas a suas perfis|Should| 
+|US40|Eu, como usuário, desejo ser capaz de imprimir meu cartão de vacina|Would|
   
 
 ## Épico 03 - Sistema de Busca
 
 Este épico determina as histórias que formarão as funcionalidades relacionadas ao sistema de busca, dentro dela são definidos os parâmetros para que o desenvolvedor e o usuário possam buscar por vacinas específicas registradas no banco.
 
-### Feature 07 - Busca por vacinas
+### Feature 08 - Busca por vacinas
 
 |ID|História de Usuário|Prioridade|
 |--|--|--|
-|US37|Eu, como desenvolvedor, desejo criar uma rota para buscar vacinas de acordo os parâmetros de pesquisa|Would| 
-|US38|Eu, como usuário, desejo ser capaz de buscar por vacinas no aplicativo, por parâmetros|Would|
+|US41|Eu, como desenvolvedor, desejo criar uma rota para buscar vacinas de acordo os parâmetros de pesquisa|Would| 
+|US42|Eu, como usuário, desejo ser capaz de buscar por vacinas no aplicativo, por parâmetros|Would|
 
 
 ## Épico 04 - UX/UI
 Este épico determina as histórias que formarão as funcionalidades relacionadas à experiência do usuário e a interface do aplicativo, dentro dela são definidos os parâmetros para que usuário tenha uma experiência otimizada do produto.
 
-### Feature 08 - Notificações
+### Feature 09 - Notificações
 
 |ID|História de Usuário|Prioridade|
 |--|--|--|
-|US39|Eu, como usuário, desejo receber notificações quando datas de vacinações se aproximarem|Would|
+|US43|Eu, como usuário, desejo receber notificações quando datas de vacinações se aproximarem|Would|
 
-### Feature 09 - Modo Escuro
+### Feature 10 - Modo Escuro
 
 |ID|História de Usuário|Prioridade|
 |--|--|--|
-|US40|Eu, como usuário, desejo ser capaz de usar o aplicativo no modo escuro|Would|
+|US44|Eu, como usuário, desejo ser capaz de usar o aplicativo no modo escuro|Would|
 
