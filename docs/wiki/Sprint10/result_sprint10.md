@@ -7,25 +7,28 @@ Duração: 13/04 à 20/04
 | ------------------- | ------------------- |------------------- |
 |  Ciro Costa |   ✔  |   ✔  |
 |  Carlos Daniel |  ✔  |  ✔  |
+|  Gabriel |  X  |  ✔  |
 |  Erick |  ✔  |  ✔  |
 |  Paulo Vitor | ✔ |  ✔  |
 |  Guilherme  | ✔ | ✔ |
 
 ## Mapa do conhecimento  
 
-![Mapa do conhecimento](../../assets/MapaConhecimentoSprint9.png) 
+<!-- ![Mapa do conhecimento](../../assets/MapaConhecimentoSprint7.png)  -->
 
 
 ## Status das Tarefas no Fim da Sprint
 | **Issue** | **História** | **Resposáveis** | **Status** |
 |--|--|--|--|
-|**#134**| * | Carlos | Done |
-|**#135**| * | Erick, Paulo | Done |
-|**#136**| * | Ciro, Guilherme | Done |
-|**#137**| * | Erick, Paulo | Done | 
-|**#138**| * | Guilherme, Carlos | Done | 
-|**#139**| * | Erick, Paulo | Done |    
-|**#140**| * | Ciro | Done |
+|**#102**| US09 | Carlos Daniel, Gabriel | Done |
+|**#112**| US05 | Carlos, Paulo | Done |
+|**#113**| US06 | Gabriel, Guilherme | Done |
+|**#114**| US10 | Carlos, Erick | Done | 
+|**#115**| * | Ciro, Paulo | Done | 
+|**#116**| * | Erick | Done  |    
+|**#117**| US09 | Ciro | Done |
+|**#118**| * | Ciro | Done  |
+|**#119**| * |  Ciro, Guilherme  | Done | 
 
 - Pontos do planning: 24
 - Pontos entregues: ? + 5
@@ -35,11 +38,15 @@ Duração: 13/04 à 20/04
 
 ## Retrospectiva
 #### Pontos positivos
-- Aprendi bastante sobre testes
+- 
+- 
+- 
 
 #### Pontos negativos
-- Fiquei ocupado com provas e listas na semana
-- Semana com muitas atividades da faculdade, surpresa
+- 
+- 
+- 
+- 
 
 #### Dívidas técnicas
 - Nenhuma
