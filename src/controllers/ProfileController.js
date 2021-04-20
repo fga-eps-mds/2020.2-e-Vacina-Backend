@@ -28,6 +28,7 @@ async function createProfile(request, response){
   }
 
   catch(error){
+    console.log(error);
     return response.status(400).send({error: error});
   }
 }
