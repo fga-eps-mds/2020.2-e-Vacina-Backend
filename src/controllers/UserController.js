@@ -15,7 +15,7 @@ const User = require('../models/User');
 
         const user = await User.create(request.body);
         user.password = undefined;
-        return response.send({ user });
+        return response.send({user});
       
           
 
