@@ -6,7 +6,7 @@ const request = supertest(app);
 
 const user = {
   email: 'cd.santos.360@gmail.com',
-  password: 'putzman12',
+  password: 'super_password',
   phoneNumber: '61992719513'
 }
 
@@ -19,7 +19,7 @@ const user_2 = {
 
 describe('User Controller', () => {
   beforeAll(async() => {
-    mongoose.connect('mongodb+srv://evacina:XqzHugtRXYJUHAsH@testing.2escz.mongodb.net/Testing?retryWrites=true&w=majority', {
+    mongoose.connect(global.__MONGO_URI__, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
@@ -59,7 +59,6 @@ describe('User Controller', () => {
     expect(response.status).toBe(200);
   });
 
-
   it('Should be able to update user', async() => {
     const responseSavedUser = await request.post('/user').send(user);
     const id = responseSavedUser.body.user._id;
@@ -93,4 +92,5 @@ describe('User Controller', () => {
     expect(response.status).toBe(200);
   });
   
+
 });
