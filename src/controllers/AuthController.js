@@ -26,7 +26,7 @@ async function login(request, response){
       expiresIn: 86400,
     });
 
-    response.send({token});
+    response.send({user, token});
 
   }
 
