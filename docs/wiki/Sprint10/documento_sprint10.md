@@ -1,19 +1,19 @@
 ## Período
-Duração: 13/04 à 20/04
+Duração: 27/04 à 04/05
 
 
 ## Reunião
-* Data: 13/04
-* Hora: 12h
+* Data: 27/04
+* Hora: 11h
 * Local: Reunião online
 
 
 ## Objetivo
-- Iniciar padronização de codigo no back-end
-- Criar o CRUD da carteira de vacinas
-- Criar o CRUD de perfis
-- Iniciar a adição de testes no back-end
-- Criar tela principal
+-  
+-  
+-  
+-  
+- 
 
 ## Papeis definidos
 | Membros  |  Função  |
@@ -27,18 +27,16 @@ Duração: 13/04 à 20/04
 ## Backlog
 | Issue | Descrição | Pontuação | Responsáveis | Status | Prioridade | Repositório |
 | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |------------------- |------------------- | 
-|**#134**| Atualizar Backlog | 2 |   | A fazer | Must | Back-end |
-|**#135**| Atualizar o protótipo | 2 |  | A fazer | Must | * |
-|**#136**| Criar o Componentes vacinas | 8 |  | A fazer | * | Front-end |
-|**#137**| Tela configuração | 3 |  | A fazer | Must | Front-end |
-|**#138**| Tela criar perfil | 2 |  | A fazer | Must | Front-end |
-|**#139**| Criar tela de geral | 3 |  | A fazer | * | Front-end |
-|**#140**| Atualizar documento de arquitetura | 3 |  | A fazer | * | Back-end |
+|**#146**| Criar tela de ajuda | 3 | Erick | In progress | * | ||Front-end |
+|**#147**| Adicionar variaveis de ambiente | 3 |  | A fazer | * | Back-end |
+|**#148**| Conectar telas perfis no back | 5 |  | A fazer | * | Front-end |
+|**#149**| Melhorar login screen | 2 |  | A fazer | * | Front-end |
+|**#150**| Completar lógica resgister screen | 5 |  | A fazer | * | Front-end |
+|**#151**| Melhorar info Screen | 3 |  | A fazer | * | Front-end |
 
 ## Extra
 | Issue | Descrição | Pontuação | Responsáveis | Status | Prioridade | Repositório |
 | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |------------------- |------------------- | 
-|**#141**|Criar tela detalhes|5|
 
 
 ## Pareamento
