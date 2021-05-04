@@ -168,10 +168,13 @@ O aplicativo baseia-se em uma arquitetura de objetos que possuem uma relação d
   O Front-end é baseado completamente linguagem Dart juntamente com o Flutter.
 
   ![Front-end](../assets/frontend.png)  
-  ####  5.3.1 Back-end
+  ####  5.3.2 Back-end
   O Back-end é baseado completamente em Node.js, JavaScript e MongoDB.
 
   ![Back-end](../assets/backend.png)
+
+  ####  5.3.3 Diagrama de banco de dados
+  ![Banco de dados](../assets/diagrama_banco_de_dados.png)
 
 <!-- ## 6. Tamanho e Desempenho
 ## 7. Qualidade

@@ -5,6 +5,7 @@
 | ------------------- | ------------------- | ------------------- | ------------------- |
 |  1.0 |  08/03/2021 | Carlos Daniel |  Protótipo de Alta Fidelidade |
 |  1.1 |  27/03/2021 | Erick, Paulo | Atualização do Protótipo de Alta Fidelidade |
+|  1.2|  19/04/2021 | Erick, Paulo  | Atualização do Protótipo de Alta Fidelidade |
 
 
 

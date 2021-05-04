@@ -1,6 +1,7 @@
 - Documentação
     - [Documento de Arquitetura](./wiki/documento_arquitetura.md)
     - [Documento de Visão](./wiki/documento_visao.md)
+    
 - Sprints planning
     - [Sprint 0](./wiki/Sprint0/documento_sprint0.md)
     - [Sprint 1](./wiki/Sprint1/documento_sprint1.md)
@@ -12,7 +13,6 @@
     - [Sprint 7](./wiki/Sprint7/documento_sprint7.md)
     - [Sprint 8](./wiki/Sprint8/documento_sprint8.md)
     - [Sprint 9](./wiki/Sprint9/documento_sprint9.md)
-
 
 - Sprints review
     - [Sprint 0](./wiki/Sprint0/result_sprint0.md)
