@@ -27,7 +27,7 @@ Este épico determina as histórias que formarão as funcionalidade relacionadas
 
 |ID|História de Usuário|Prioridade|
 |--|--|--|
-|US01|Eu, como desenvolvedor, desejo ser cria um usuário na plataforma com os dados: email, telefone e senha|Must|
+|US01|Eu, como desenvolvedor, desejo ser criar um usuário na plataforma com os dados: email, telefone e senha|Must|
 |US02|Eu, como desenvolvedor, desejo poder visualizar os dados de um usuário no banco, para que eu possa saber quem está cadastrado |Must| 
 |US03|Eu, como desenvolvedor, desejo criar uma rota para os meus usuários atualizarem seus dados|Must|
 |US04|Eu, como desenvolvedor, desejo criar uma rota para deletar usuários|Must|
