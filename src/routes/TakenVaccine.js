@@ -9,6 +9,7 @@
  routes.post('/', TakenVaccineController.createTakenVaccine);
  routes.get('/', TakenVaccineController.listTakenVaccines);
  routes.get('/:takenVaccineId', TakenVaccineController.getTakenVaccineById);
+ routes.get('/p/:profileId', TakenVaccineController.getTakenVaccineByProfile);
  routes.put('/:takenVaccineId', TakenVaccineController.updateTakenVaccine);
  routes.delete('/:takenVaccineId', TakenVaccineController.deleteTakenVaccine);
 

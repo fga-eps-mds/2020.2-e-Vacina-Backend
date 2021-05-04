@@ -1,6 +1,7 @@
 const express = require('express');
 const Profile = require('../models/Profile');
 const User = require('../models/User');
+const TakenVaccineController = require('./TakenVaccineController');
 
 async function createProfile(request, response){
   try{
@@ -28,7 +29,6 @@ async function createProfile(request, response){
   }
 
   catch(error){
-    console.log(error);
     return response.status(400).send({error: error});
   }
 }
@@ -92,22 +92,34 @@ async function updateProfile(request, response){
 async function deleteProfile(request, response){
   try{  
     const profileId = request.params.profileId;
+    const userId = request.params.userId;
     
     if( !(await Profile.findById(profileId)) )
-     return response.status(400).send({error: 'Profile not found'});
+    return response.status(400).send({error: 'Profile not found'});
     
-    const userId = request.params.userId;
     const user = await User.findById(userId);  
+    
+    
+    if (!user) 
+    return response.status(400).send({error: 'User not found'});      
+    
+    
+    const oldProfilesIdsLenght = user.profilesIds.length;  
     const profilesIds = user.profilesIds;  
-     
+    
     for(let i = 0; i<profilesIds.length; i++){
       if(profilesIds[i]===profileId){
         profilesIds.splice(i, 1);
       }
     }
-      
+    
+    if(profilesIds.length === oldProfilesIdsLenght)
+    return response.status(400).send({error: 'Profile not found'});
+    
+    
     const update = {profilesIds: profilesIds};
     const options = {new: true}
+    await TakenVaccineController.deleteTakenVaccineByProfile(profileId);
     await User.findByIdAndUpdate(userId, update, options); 
     await Profile.findByIdAndDelete(profileId);
     return response.send({message: 'Successfully deleted profile with id: ' + profileId});
