@@ -21,7 +21,7 @@
 
  async function listTakenVaccines(request, response){
    try{
-     const listTaken = await TakenVaccine.find({});
+     const listTaken = await TakenVaccine.find({}).populate('vaccineId',['name','_id','periodicity','numberOfDoses']);
 
      return response.send({listTaken});
    }
@@ -33,18 +33,31 @@
  async function getTakenVaccineById(request, response){
 
    try {
-     const takenVaccine = await TakenVaccine.findById(request.params.takenVaccineId);
-    
+     const takenVaccine = await TakenVaccine.findById(request.params.takenVaccineId).populate('vaccineId');
+  
+
      return response.send({ takenVaccine });
    } catch (error) {
       return response.status(400).send({error: 'Taken vaccine not found'});
    } 
  }
 
+ async function getTakenVaccineByProfile(request, response){
+  try {
+    const profileId = request.params.profileId
+    var MyObjectId = require('mongoose').Types.ObjectId;
+    var queryVenue = {profileId: new MyObjectId(profileId)};
+    const takenVaccine = await TakenVaccine.find(queryVenue).populate('vaccineId');
+    return response.send({ takenVaccine });
+  } catch (error) {
+     return response.status(400).send({error: 'Taken vaccine not found'});
+  } 
+}
+
  async function updateTakenVaccine(request, response){
    try{ 
      const takenVaccineId = request.params.takenVaccineId;
-    
+     
      if(!takenVaccineId)
       return response.status(400).send({error: 'Vaccine not found, check id again'});
     
@@ -59,7 +72,7 @@
  async function deleteTakenVaccine(request, response){
    try{
      const takenVaccineId = request.params.takenVaccineId;
-
+     
      await TakenVaccine.findByIdAndRemove(takenVaccineId);
 
      return response.send({message: 'Deleted'});
@@ -69,4 +82,15 @@
    }
  }
 
- module.exports = {createTakenVaccine, getTakenVaccineById, listTakenVaccines, updateTakenVaccine, deleteTakenVaccine};
+ async function deleteTakenVaccineByProfile(profileId){
+  try {
+    var MyObjectId = require('mongoose').Types.ObjectId;
+    var queryVenue = {profileId: new MyObjectId(profileId)};
+    const takenVaccine = await TakenVaccine.find(queryVenue).deleteMany();
+    return  takenVaccine;
+  } catch (error) {
+     return "deu erro";
+  } 
+}
+
+ module.exports = {deleteTakenVaccineByProfile,getTakenVaccineByProfile,createTakenVaccine, getTakenVaccineById, listTakenVaccines, updateTakenVaccine, deleteTakenVaccine};
