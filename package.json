@@ -9,7 +9,7 @@
   "scripts": {
     "start": "nodemon -L src/start.js",
     "precommit": "npm run lint",
-    "test": "jest --detectOpenHandles --testTimeout=10000"
+    "test": "jest --detectOpenHandles --testTimeout=15000"
   },
   "repository": {
     "type": "git",

@@ -3,7 +3,8 @@ const bcrypt = require('bcryptjs');
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
 
-const authConfig = require('../config/auth');
+require('dotenv').config();
+const authConfig = process.env.SECRET;
 
 async function login(request, response){
 
@@ -22,7 +23,7 @@ async function login(request, response){
     
     user.password = undefined;
     
-    const token = jwt.sign({id: user.id}, authConfig.secret, {
+    const token = jwt.sign({id: user.id}, authConfig, {
       expiresIn: 86400,
     });
 
