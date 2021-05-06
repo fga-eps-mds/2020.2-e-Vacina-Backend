@@ -106,15 +106,15 @@ async function deleteProfile(request, response){
     
     const oldProfilesIdsLenght = user.profilesIds.length;  
     const profilesIds = user.profilesIds;  
-    
+
     for(let i = 0; i<profilesIds.length; i++){
-      if(profilesIds[i]===profileId){
+      if(profilesIds[i]==profileId){
         profilesIds.splice(i, 1);
       }
     }
     
     if(profilesIds.length === oldProfilesIdsLenght)
-    return response.status(400).send({error: 'Profile not found'});
+    return response.status(400).send({error: 'Profile not found in user'});
     
     
     const update = {profilesIds: profilesIds};

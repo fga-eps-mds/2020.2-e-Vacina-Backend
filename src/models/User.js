@@ -19,10 +19,9 @@ const UserSchema = new mongoose.Schema({
     unique: true
   },
 
-  profilesIds: {
-    type: [String],
-    default: [],
-  }
+  profilesIds: 
+    [{type: mongoose.Schema.Types.ObjectId, ref: 'Profile'}],
+  
 
 });
 
