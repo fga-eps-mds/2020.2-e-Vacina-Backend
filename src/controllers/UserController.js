@@ -30,7 +30,7 @@ const profileController = require('./ProfileController');
 async function getUserById(request, response){
 
   try {
-    const user = await User.findById(request.params.userId);
+    const user = await User.findById(request.params.userId).populate('profilesIds');
     
     if(user)
       return response.send({ user });
