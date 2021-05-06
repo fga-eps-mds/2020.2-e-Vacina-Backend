@@ -107,9 +107,9 @@ async function deleteUser(request, response){
   try{
     const id = request.params.userId;
     const user = await User.findById(id);
-    user.profilesIds.forEach(element => {
+    user.profilesIds.forEach(async (element) => {
       req = {params:{userId:id,profileId:element}};
-      profileController.deleteProfile(req); 
+      await profileController.deleteProfile(req); 
     });
     await User.findByIdAndDelete(id);
     return response.send({message: 'Successfully deleted id: ' + id});
