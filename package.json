@@ -2,13 +2,14 @@
   "name": "2020.2-e-vacina-backend",
   "version": "1.0.0",
   "description": "Carteira de vacinacao digital",
-  "main": "index.js",
+  "main": "start.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "start": "nodemon -L src/index.js",
-    "precommit": "npm run lint"
+    "start": "nodemon -L src/start.js",
+    "precommit": "npm run lint",
+    "test": "jest --detectOpenHandles --testTimeout=15000"
   },
   "repository": {
     "type": "git",
@@ -31,7 +32,10 @@
     "nodemon": "^2.0.7"
   },
   "devDependencies": {
+    "@shelf/jest-mongodb": "^1.2.4",
     "eslint": "^7.24.0",
-    "husky": "^6.0.0"
+    "husky": "^6.0.0",
+    "jest": "^26.6.3",
+    "supertest": "^6.1.3"
   }
 }

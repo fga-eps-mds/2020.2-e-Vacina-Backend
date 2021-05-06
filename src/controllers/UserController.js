@@ -1,4 +1,6 @@
 const User = require('../models/User');
+const bcrypt = require('bcryptjs');
+const profileController = require('./ProfileController');
 
 
  async function createUser(request,response){
@@ -15,7 +17,7 @@ const User = require('../models/User');
 
         const user = await User.create(request.body);
         user.password = undefined;
-        return response.send({ user });
+        return response.send({user});
       
           
 
@@ -56,15 +58,36 @@ async function listUsers(request, response){
 async function updateUser(request, response){
 
   try{
-    const {email, phoneNumber} = request.body;
+    const {email, phoneNumber, password} = request.body;
+    const id = request.params.userId;
+    var compareId = await User.findOne({ email });
     
-    if(email && await User.findOne({ email }))
-      return response.status(400).send({error: 'Email already exists'});
-  
-    if(phoneNumber && await User.findOne({phoneNumber}))
+    if (compareId) {
+      if (id != compareId._id && email)
+        return response.status(400).send({error: 'Email already exists'});
+    }
+    
+    compareId = await User.findOne({phoneNumber});
+    
+    if(compareId){
+      if(phoneNumber && compareId._id != id)
       return response.status(400).send({error: 'PhoneNumber already exists'});
+    }
 
-      const id = request.params.userId;
+    if(password) {
+      var user = await User.findById(id).select('+password');
+      if(!user){
+        return res.status(400).send({error: "Error updating user info"});
+      }
+      
+      if(await bcrypt.compare(password, user.password)){
+        return res.status(400).send({error: "Password cannot be the same"});
+      }
+      
+      const newPassword = await bcrypt.hash(password, 10);
+      await user.updateOne({password: newPassword});
+    }
+      delete request.body["password"];
       const update = request.body;
       const options = {new: true};
       const updtedUser = await User.findByIdAndUpdate(id, update, options);
@@ -83,6 +106,11 @@ async function updateUser(request, response){
 async function deleteUser(request, response){
   try{
     const id = request.params.userId;
+    const user = await User.findById(id);
+    user.profilesIds.forEach(element => {
+      req = {params:{userId:id,profileId:element}};
+      profileController.deleteProfile(req); 
+    });
     await User.findByIdAndDelete(id);
     return response.send({message: 'Successfully deleted id: ' + id});
   }
@@ -90,5 +118,7 @@ async function deleteUser(request, response){
     return response.status(400).send({error: 'Failed to delete user : ' + error.message});
   }
 }
+    
+
 
 module.exports = {createUser, getUserById, listUsers, updateUser, deleteUser};
