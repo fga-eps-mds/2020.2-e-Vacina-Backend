@@ -19,17 +19,17 @@ Duração: 13/04 à 20/04
 ## Status das Tarefas no Fim da Sprint
 | **Issue** | **História** | **Resposáveis** | **Status** |
 |--|--|--|--|
-|**#134**| * | Carlos | Done |
+|**#134**| * | Carlos | In Progress |
 |**#135**| * | Erick, Paulo | Done |
-|**#136**| * | Ciro, Guilherme | Done |
+|**#136**| * | Ciro, Guilherme | In Progress |
 |**#137**| * | Erick, Paulo | Done | 
 |**#138**| * | Guilherme, Carlos | Done | 
 |**#139**| * | Erick, Paulo | Done |    
 |**#140**| * | Ciro | Done |
 
-- Pontos do planning: 24
-- Pontos entregues: ? + 5
-- Dívida da sprint: Nenhuma
+- Pontos do planning: 23
+- Pontos entregues: 18
+- Dívida da sprint: 134, 136
 
 
 
@@ -45,4 +45,4 @@ Duração: 13/04 à 20/04
 - Nenhuma
 
 ### Análise do Scrum Master
-- 
+- Ocorreu uma semana partircurlamente atarefada para todos os membros do projeto. Ocasionando assim na divida técnica de 2 issues.

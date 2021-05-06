@@ -7,34 +7,29 @@ Duração: 13/04 à 20/04
 | ------------------- | ------------------- |------------------- |
 |  Ciro Costa |   ✔  |   ✔  |
 |  Carlos Daniel |  ✔  |  ✔  |
-|  Gabriel |  X  |  ✔  |
 |  Erick |  ✔  |  ✔  |
 |  Paulo Vitor | ✔ |  ✔  |
-|  Guilherme  | ✔ | ✔ |
+|  Guilherme  | ✔ | X |
 
 ## Mapa do conhecimento  
 
-<!-- ![Mapa do conhecimento](../../assets/MapaConhecimentoSprint7.png)  -->
-
+![Mapa do conhecimento](../../assets/MapaConhecimentoSprint10.png)
 
 ## Status das Tarefas no Fim da Sprint
 | **Issue** | **História** | **Resposáveis** | **Status** |
 |--|--|--|--|
-|**#102**| US09 | Carlos Daniel, Gabriel | Done |
-|**#112**| US05 | Carlos, Paulo | Done |
-|**#113**| US06 | Gabriel, Guilherme | Done |
-|**#114**| US10 | Carlos, Erick | Done | 
-|**#115**| * | Ciro, Paulo | Done | 
-|**#116**| * | Erick | Done  |    
-|**#117**| US09 | Ciro | Done |
-|**#118**| * | Ciro | Done  |
-|**#119**| * |  Ciro, Guilherme  | Done | 
+|**#146**| * | Erik | Done |
+|**#147**| * | Carlos | Done |
+|**#148**| * | Erick, Paulo | Done |
+|**#149**| * | Erick, Paulo | Done | 
+|**#150**| * | Ciro, Guilherme | Done | 
+|**#151**| * | Ciro, Guilherme | Done  |    
+|**#134**| * | Carlos | Done |
+|**#136**| * | Ciro, Guilherme | Done |
 
-- Pontos do planning: 24
-- Pontos entregues: ? + 5
+- Pontos do planning: 21
+- Pontos entregues: 31
 - Dívida da sprint: Nenhuma
-
-
 
 ## Retrospectiva
 #### Pontos positivos

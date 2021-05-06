@@ -7,10 +7,10 @@ Duração: 13/04 à 20/04
 | ------------------- | ------------------- |------------------- |
 |  Ciro Costa |   ✔  |   ✔  |
 |  Carlos Daniel |  ✔  |  ✔  |
-|  Gabriel |  X  |  ✔  |
+|  Gabriel |  ✔  |  ✔  |
 |  Erick |  ✔  |  ✔  |
 |  Paulo Vitor | ✔ |  ✔  |
-|  Guilherme  | ✔ | ✔ |
+|  Guilherme  | X | ✔ |
 
 ## Mapa do conhecimento  
 
