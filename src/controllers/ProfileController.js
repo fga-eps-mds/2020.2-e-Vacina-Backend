@@ -13,7 +13,7 @@ async function createProfile(request, response){
 
     const {cpf} = request.body;
     if(await Profile.findOne({cpf:cpf}))
-     return response.status(400).send({error: 'CPF already exists'});
+     return response.status(400).send({error: 'CPF already exists in DB'});
     
     const newProfile = await Profile.create(request.body); 
 

@@ -3,8 +3,9 @@
 ## Histórico de Revisão
 |Autor|Mudanças|Data|Versão|
 |--|--|--|--|
-|[Carlos Daniel](https://github.com/luiz-herique), [Ciro Costa](https://github.com/ciro-c)|Criação do documento|11/03/21|1.0|
-|[Carlos Daniel](https://github.com/luiz-herique), [Guilherme](https://github.com/GRVial)|Atualização do documento|22/03/21|1.1|
+|[Carlos Daniel](https://github.com/yesklin), [Ciro Costa](https://github.com/ciro-c)|Criação do documento|11/03/21|1.0|
+|[Carlos Daniel](https://github.com/yesklin), [Guilherme](https://github.com/GRVial)|Atualização do documento|22/03/21|1.1|
+[Carlos Daniel](https://github.com/yesklin)| Atualização do documento|02/04/21|1.2|
 
 
 ## Histórias de Usuário
@@ -34,6 +35,8 @@ Este épico determina as histórias que formarão as funcionalidade relacionadas
 |US06|Eu, como usuário, desejo visualizar meus dados no e-Vacina|Must| 
 |US07|Eu, como usuário, desejo atualizar meu dados de acordo com minhas necessidades|Must| 
 |US08|Eu, como usuário, desejo ser capaz deletar os meus dados do banco, caso eu não queira usar mais o aplicativo|Must|
+|US45|Eu, como usuário, desejo ser capaz de alterar minha senha caso eu esqueça a antiga|Should|
+
 
 
 ### Feature 02 - Login e Logout
@@ -42,6 +45,7 @@ Este épico determina as histórias que formarão as funcionalidade relacionadas
 |--|--|--|
 |US09|Eu, como desenvolvedor, desejo criar uma rota de autenticação para meu usuário|Must| 
 |US10|Eu, como usuário, desejo ser capaz de realizar o login e o logout no aplicativo|Must| 
+
 
 ### Feature 03 - CRUD dos perfis
 
