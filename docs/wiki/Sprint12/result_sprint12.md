@@ -1,5 +1,5 @@
 ## Período
-Duração: 04/05 à 11/05
+Duração: 13/04 à 20/04
 
 ## Monitoramento e Controle
 ### Presenças Sprint Plaining + Sprint Review
@@ -14,36 +14,42 @@ Duração: 04/05 à 11/05
 
 ## Mapa do conhecimento  
 
-![Mapa do conhecimento](../../assets/MapaConhecimentoSprint11.png)
+<!-- ![Mapa do conhecimento](../../assets/MapaConhecimentoSprint7.png)  -->
 
 
 ## Status das Tarefas no Fim da Sprint
 | **Issue** | **História** | **Resposáveis** | **Status** |
 |--|--|--|--|
-|**#153**| * | Guilherme | Done |
-|**#154**| * | Paulo, Erick | Done |
-|**#155**| * | Paulo, Erick | Done |
-|**#156**| * | Paulo, Erick | Done | 
-|**#158**| * | Carlos | Done | 
-|**#159**| * | Ciro | Done  |    
-|**#160**| * | Carlos | Done |
-|**#168**| * | Paulo, Erick | Done  |
+|**#102**| US09 | Carlos Daniel, Gabriel | Done |
+|**#112**| US05 | Carlos, Paulo | Done |
+|**#113**| US06 | Gabriel, Guilherme | Done |
+|**#114**| US10 | Carlos, Erick | Done | 
+|**#115**| * | Ciro, Paulo | Done | 
+|**#116**| * | Erick | Done  |    
+|**#117**| US09 | Ciro | Done |
+|**#118**| * | Ciro | Done  |
+|**#119**| * |  Ciro, Guilherme  | Done | 
 
-- Pontos do planning: 
-- Pontos entregues: 
+- Pontos do planning: 24
+- Pontos entregues: ? + 5
 - Dívida da sprint: Nenhuma
+
+
 
 ## Retrospectiva
 #### Pontos positivos
-- Consegui ser bem produtivo essa semana e entregar 4 issues
-- Semestre está acabando
+- 
+- 
+- 
 
 #### Pontos negativos
-- Semestre está acabando
-
+- 
+- 
+- 
+- 
 
 #### Dívidas técnicas
 - Nenhuma
 
 ### Análise do Scrum Master
-- Essa sprint foi a melhor
+- 

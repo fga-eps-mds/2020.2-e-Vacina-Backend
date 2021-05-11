@@ -9,11 +9,9 @@ Duração: 27/04 à 04/05
 
 
 ## Objetivo
--  
--  
--  
--  
-- 
+- Arrumar o ambiente back-end para deploy
+- Criar tela de ajuda
+- Conectar telas antigas
 
 ## Papeis definidos
 | Membros  |  Função  |
