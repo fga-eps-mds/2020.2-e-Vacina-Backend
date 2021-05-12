@@ -72,8 +72,8 @@ async function updateProfile(request, response){
 
     const profileId = request.params.profileId;
     const {cpf} = request.body;
-
-    if(await Profile.findOne({cpf:cpf}))
+    const userFound = await Profile.findOne({cpf:cpf});
+    if(userFound && userFound._id != profileId)
      return response.status(400).send({error: 'CPF already exists'});
 
     const update = request.body;

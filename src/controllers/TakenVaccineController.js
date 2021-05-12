@@ -61,7 +61,7 @@
      if(!takenVaccineId)
       return response.status(400).send({error: 'Vaccine not found, check id again'});
     
-     const takenVaccine = await TakenVaccine.findByIdAndUpdate(takenVaccineId,request.body,true);
+     const takenVaccine = await TakenVaccine.findByIdAndUpdate(takenVaccineId,request.body,{new:true});
     
      return response.send({takenVaccine});
    }catch(error){   
