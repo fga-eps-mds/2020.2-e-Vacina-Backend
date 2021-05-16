@@ -47,3 +47,6 @@ jobs:
 
     - name: Start containers
       run: docker-compose up -d --build
+
+    - name: Running test
+      run: npx jest --detectOpenHandles --testTimeout=15000
