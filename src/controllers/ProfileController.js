@@ -1,4 +1,3 @@
-const express = require('express');
 const Profile = require('../models/Profile');
 const User = require('../models/User');
 const TakenVaccineController = require('./TakenVaccineController');
@@ -116,10 +115,12 @@ async function deleteProfile(request, response){
     if(profilesIds.length === oldProfilesIdsLenght)
     return response.status(400).send({error: 'Profile not found in user'});
     
-    
+    var MyObjectId = require('mongoose').Types.ObjectId;
+    var queryVenue = {profileId: new MyObjectId(profileId)};
     const update = {profilesIds: profilesIds};
     const options = {new: true}
-    await TakenVaccineController.deleteTakenVaccineByProfile(profileId);
+
+    await TakenVaccineController.deleteTakenVaccineByComponentId(queryVenue);
     await User.findByIdAndUpdate(userId, update, options); 
     await Profile.findByIdAndDelete(profileId);
     return response.send({message: 'Successfully deleted profile with id: ' + profileId});
