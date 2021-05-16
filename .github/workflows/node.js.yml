@@ -27,7 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Running test
-      run: npx 
+      run: npx jest --detectOpenHandles --testTimeout=15000
 
     - name: Generating test report
       run: npx jest --coverage
