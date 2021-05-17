@@ -35,6 +35,7 @@ let userId;
 let profileId;
 let vaccineId;
 let takenVaccineId;
+let dateOfDosesTaken;
 let token;
 
 describe('TakenVaccine Controller', () => {
@@ -64,8 +65,9 @@ describe('TakenVaccine Controller', () => {
     token = (await request.post('/auth/login').send({email:user.email, password:user.password})).body.token;
     const savedProfile = await request.post('/profile/'+userId).set('Authorization', 'Bearer '+token).send(profile);
     profileId = savedProfile.body.newProfile._id;
+    dateOfDosesTaken = new Date("December 17, 1995 03:24:00");
 
-    const body = {profileId: profileId, vaccineId: vaccineId, numberOfDosesTaken: 0};
+    const body = {profileId: profileId, vaccineId: vaccineId, dateOfDosesTaken: dateOfDosesTaken};
     
     const response = await request.post('/taken').send(body);
     takenVaccineId = response.body.takenVaccine._id;
@@ -85,7 +87,7 @@ describe('TakenVaccine Controller', () => {
   });
 
   it('should update taken vaccine', async() => {
-    const update = {numberOfDosesTaken: 1};
+    const update = {dateOfDosesTaken: new Date("December 17, 1995 03:24:00")};
     const response = await request.get('/taken/'+takenVaccineId).send(update);
     expect(response.status).toBe(200);
   });
