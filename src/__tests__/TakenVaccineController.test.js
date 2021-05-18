@@ -4,6 +4,7 @@ const supertest = require('supertest');
 const Profile = require('../models/Profile');
 const User = require('../models/User');
 const Vaccine = require('../models/Vaccine');
+const Admin = require('../models/Admin');
 const request = supertest(app);
 
 
@@ -30,6 +31,11 @@ const vaccine = {
   periodicity: 30
 }
 
+const admin = {
+  email: "admin@hotmail.com",
+  password: "admin_password"
+}
+
 
 let userId;
 let profileId;
@@ -37,6 +43,7 @@ let vaccineId;
 let takenVaccineId;
 let dateOfDosesTaken;
 let token;
+let adminToken
 
 describe('TakenVaccine Controller', () => {
   beforeAll(async() => {
@@ -53,6 +60,7 @@ describe('TakenVaccine Controller', () => {
     await User.collection.deleteMany({});
     await Profile.collection.deleteMany({});
     await Vaccine.collection.deleteMany({});
+    await Admin.collection.deleteMany({});
 
     await mongoose.connection.close();
     done();
@@ -60,9 +68,12 @@ describe('TakenVaccine Controller', () => {
 
   it('should add a taken vaccine to a profile', async() => {
 
-    vaccineId = (await request.post('/vaccine').send(vaccine)).body.vaccine._id;
+    await Admin.create(admin);
+    adminToken = (await request.post('/auth/loginAdmin').send(admin)).body.token;
+    vaccineId = (await request.post('/vaccine').set({'Authorization':`Bearer ${adminToken}`}).send(vaccine)).body.vaccine._id;
     userId = (await request.post('/user').send(user)).body.user._id;
     token = (await request.post('/auth/login').send({email:user.email, password:user.password})).body.token;
+    
     const savedProfile = await request.post('/profile/'+userId).set('Authorization', 'Bearer '+token).send(profile);
     profileId = savedProfile.body.newProfile._id;
     dateOfDosesTaken = new Date("December 17, 1995 03:24:00");
