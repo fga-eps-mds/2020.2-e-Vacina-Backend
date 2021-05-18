@@ -1,7 +1,10 @@
 const express = require('express');
 const bcrypt = require('bcryptjs');
-const User = require('../models/User');
 const jwt = require('jsonwebtoken');
+
+const User = require('../models/User');
+const Admin = require('../models/Admin');
+
 
 require('dotenv').config();
 const authConfig = process.env.SECRET;
@@ -36,4 +39,35 @@ async function login(request, response){
   }
 }
 
-module.exports = {login};
+async function loginAdmin(request, response){
+
+
+  try{
+    const {email, password} = request.body;
+
+    const admin = await Admin.findOne({email}).select('+password');
+
+    if(!admin) 
+      return response.status(400).send({error: "Admin not found"});
+
+    if(!await bcrypt.compare(password, admin.password))
+      return response.status(400).send({error: "Invalid password"});
+
+    
+    admin.password = undefined;
+    
+    const token = jwt.sign({id: admin.id}, authConfig, {
+      expiresIn: 86400,
+    });
+
+    response.send({admin, token});
+
+  }
+
+  catch(error){
+    response.status(400).send({error:'Failed to login: '+error});
+  }
+}
+
+
+module.exports = {login, loginAdmin};
