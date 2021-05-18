@@ -30,7 +30,7 @@ jobs:
       run: npm install
 
     - name: Generating test report and running tests
-      run: npx jest --runInBand --coverage
+      run: npx jest --ci --runInBand --coverage
 
     - name: Sending the results to codecov
       run: bash <(curl -s https://codecov.io/bash) -t ${{secrets.CODECOV_TOKEN}}
