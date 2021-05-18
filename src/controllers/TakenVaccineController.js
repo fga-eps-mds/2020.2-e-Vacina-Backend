@@ -20,7 +20,7 @@
 
  async function listTakenVaccines(request, response){
    try{
-     const listTaken = await TakenVaccine.find({}).populate('vaccineId',['name','_id','periodicity','numberOfDoses']);
+     const listTaken = await TakenVaccine.find({}).populate('vaccineId',['name','_id','periodicity','dateOfDoses']);
 
      return response.send({listTaken});
    }
@@ -53,14 +53,23 @@
   } 
 }
 
- async function updateTakenVaccine(request, response){
+ async function updateTakenVaccine(request, response) {
    try{ 
      const takenVaccineId = request.params.takenVaccineId;
+     const currentTakenVaccine = await TakenVaccine.findById(takenVaccineId);
+     const {newDate} = request.body;
+
+     if(!newDate)
+      return response.status(400).send({error: 'Wrong new date'});
      
-     if(!takenVaccineId)
+     if(!currentTakenVaccine)
       return response.status(400).send({error: 'Vaccine not found, check id again'});
+
+      const newDates = currentTakenVaccine.dateOfDosesTaken;
+      newDates.push(newDate);
+      const update = {dateOfDosesTaken: newDates};
     
-     const takenVaccine = await TakenVaccine.findByIdAndUpdate(takenVaccineId,request.body,{new:true});
+     const takenVaccine = await TakenVaccine.findByIdAndUpdate(takenVaccineId, update, {new:true});
     
      return response.send({takenVaccine});
    }catch(error){   

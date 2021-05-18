@@ -6,7 +6,7 @@ async function createProfile(request, response){
   try{
     
     const userId = request.params.userId; //get user
-    const currentUser=  await User.findById(userId);
+    const currentUser = await User.findById(userId);
     if(!currentUser) 
       return response.status(400).send({error: 'User not found. Check id again'});   
 
@@ -20,7 +20,7 @@ async function createProfile(request, response){
     profilesIds.push(newProfile.id);
 
     const update = {profilesIds: profilesIds};
-    const options = {new: true}
+    const options = {new: true};
     await User.findByIdAndUpdate(userId, update, options);
     
     return response.send({newProfile});
