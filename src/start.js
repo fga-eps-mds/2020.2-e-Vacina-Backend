@@ -1,7 +1,7 @@
 const app = require('./server.js');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://mongodb:27017/e-vacina', {
+mongoose.connect(`mongodb+srv://e-vacina-team:${process.env.DB_PASSWORD}@${process.env.DB_USERNAME}.be4j5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
