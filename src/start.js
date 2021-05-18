@@ -12,7 +12,7 @@ mongoose.connect(`mongodb+srv://e-vacina-team:${process.env.DB_PASSWORD}@${proce
         console.log('Successfully Established Connection with Database')
     }
     else {
-        console.log('Failed to Establish Connection with MongoDB with Error: '+ err)
+        console.log('Failed to Establish Connection with Database with Error: '+ err)
     }
 });
 
