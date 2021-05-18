@@ -26,6 +26,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
+    - name: Npm install
+      run: npm install
+
     - name: Generating test report and running tests
       run: npx jest --runInBand --coverage
 
