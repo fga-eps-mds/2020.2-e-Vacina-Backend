@@ -1,6 +1,7 @@
 const User = require('../models/User');
 const bcrypt = require('bcryptjs');
-const profileController = require('./ProfileController');
+const Profile = require('../models/Profile');
+const TakenVaccineController = require('./TakenVaccineController');
 
 
  async function createUser(request,response){
@@ -106,12 +107,16 @@ async function updateUser(request, response){
 async function deleteUser(request, response){
   try{
     const id = request.params.userId;
+    
     const user = await User.findById(id);
-    user.profilesIds.forEach(async (element) => {
-      req = {params:{userId:id,profileId:element}};
-      await profileController.deleteProfile(req); 
-    });
-    await User.findByIdAndDelete(id);
+    if(user.profilesIds){
+      user.profilesIds.forEach(async (element) => {
+         await Profile.findByIdAndDelete(element);
+         await TakenVaccineController.deleteTakenVaccineByProfile(element);
+      });
+    }
+    await User.findByIdAndDelete(id); 
+    
     return response.send({message: 'Successfully deleted id: ' + id});
   }
   catch(error){

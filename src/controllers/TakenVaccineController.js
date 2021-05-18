@@ -1,4 +1,3 @@
- const express = require('express');
  const TakenVaccine = require('../models/TakenVaccines');
 
  async function createTakenVaccine(request, response){
@@ -91,15 +90,13 @@
    }
  }
 
- async function deleteTakenVaccineByProfile(profileId){
+ async function deleteTakenVaccineByComponentId(queryVenue){
   try {
-    var MyObjectId = require('mongoose').Types.ObjectId;
-    var queryVenue = {profileId: new MyObjectId(profileId)};
     const takenVaccine = await TakenVaccine.find(queryVenue).deleteMany();
     return  takenVaccine;
   } catch (error) {
-     return "deu erro";
+     return console.log("deu erro");
   } 
 }
 
- module.exports = {deleteTakenVaccineByProfile,getTakenVaccineByProfile,createTakenVaccine, getTakenVaccineById, listTakenVaccines, updateTakenVaccine, deleteTakenVaccine};
+ module.exports = {deleteTakenVaccineByComponentId,getTakenVaccineByProfile,createTakenVaccine, getTakenVaccineById, listTakenVaccines, updateTakenVaccine, deleteTakenVaccine};
