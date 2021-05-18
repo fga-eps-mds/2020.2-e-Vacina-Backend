@@ -5,7 +5,7 @@ name: Deployment to HEROKU
 on:
   pull_request:
     branches:
-      - deploy
+      - main
     types: [closed]
 
   # Allows you to run this workflow manually from the Actions tab
