@@ -24,14 +24,14 @@ Duração: 04/05 à 11/05
 |**#154**| * | Paulo, Erick | Done |
 |**#155**| * | Paulo, Erick | Done |
 |**#156**| * | Paulo, Erick | Done | 
-|**#158**| * | Carlos | Done | 
-|**#159**| * | Ciro | Done  |    
-|**#160**| * | Carlos | Done |
+|**#158**| * | Carlos | In progress | 
+|**#159**| * | Ciro | Review  |    
+|**#160**| * | Carlos | In progress |
 |**#168**| * | Paulo, Erick | Done  |
 
-- Pontos do planning: 
-- Pontos entregues: 
-- Dívida da sprint: Nenhuma
+- Pontos do planning: 36
+- Pontos entregues: 25
+- Dívida da sprint: #158, #159, #160
 
 ## Retrospectiva
 #### Pontos positivos
