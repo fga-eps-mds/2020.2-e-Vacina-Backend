@@ -15,3 +15,9 @@ down:
 	sudo rm -r node_modules
 
 
+.PHONY: test
+
+test: 
+	npm install
+	npm test
+

@@ -7,7 +7,7 @@ async function createProfile(request, response){
   try{
     
     const userId = request.params.userId; //get user
-    const currentUser=  await User.findById(userId);
+    const currentUser = await User.findById(userId);
     if(!currentUser) 
       return response.status(400).send({error: 'User not found. Check id again'});   
 
@@ -21,7 +21,7 @@ async function createProfile(request, response){
     profilesIds.push(newProfile.id);
 
     const update = {profilesIds: profilesIds};
-    const options = {new: true}
+    const options = {new: true};
     await User.findByIdAndUpdate(userId, update, options);
     
     return response.send({newProfile});
@@ -72,8 +72,8 @@ async function updateProfile(request, response){
 
     const profileId = request.params.profileId;
     const {cpf} = request.body;
-
-    if(await Profile.findOne({cpf:cpf}))
+    const userFound = await Profile.findOne({cpf:cpf});
+    if(userFound && userFound._id != profileId)
      return response.status(400).send({error: 'CPF already exists'});
 
     const update = request.body;
@@ -106,15 +106,15 @@ async function deleteProfile(request, response){
     
     const oldProfilesIdsLenght = user.profilesIds.length;  
     const profilesIds = user.profilesIds;  
-    
+
     for(let i = 0; i<profilesIds.length; i++){
-      if(profilesIds[i]===profileId){
+      if(profilesIds[i]==profileId){
         profilesIds.splice(i, 1);
       }
     }
     
     if(profilesIds.length === oldProfilesIdsLenght)
-    return response.status(400).send({error: 'Profile not found'});
+    return response.status(400).send({error: 'Profile not found in user'});
     
     
     const update = {profilesIds: profilesIds};

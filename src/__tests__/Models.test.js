@@ -18,7 +18,7 @@ describe('Profile Controller', () => {
     await User.collection.deleteMany({});
     await Profile.collection.deleteMany({});
     await Vaccine.collection.deleteMany({});
-    await Taken.collection.deleteMany({});
+    await TakenVaccines.collection.deleteMany({});
 
     
   });
