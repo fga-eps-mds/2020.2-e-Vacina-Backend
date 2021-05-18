@@ -7,7 +7,6 @@ Duração: 04/05 à 11/05
 | ------------------- | ------------------- |------------------- |
 |  Ciro Costa |   ✔  |   ✔  |
 |  Carlos Daniel |  ✔  |  ✔  |
-|  Gabriel |  ✔  |  ✔  |
 |  Erick |  ✔  |  ✔  |
 |  Paulo Vitor | ✔ |  ✔  |
 |  Guilherme  | X | ✔ |
@@ -26,12 +25,11 @@ Duração: 04/05 à 11/05
 |**#156**| * | Paulo, Erick | Done | 
 |**#158**| * | Carlos | In progress | 
 |**#159**| * | Ciro | Review  |    
-|**#160**| * | Carlos | In progress |
 |**#168**| * | Paulo, Erick | Done  |
 
-- Pontos do planning: 36
+- Pontos do planning: 31
 - Pontos entregues: 25
-- Dívida da sprint: #158, #159, #160
+- Dívida da sprint: #158, #159
 
 ## Retrospectiva
 #### Pontos positivos
@@ -43,7 +41,7 @@ Duração: 04/05 à 11/05
 
 
 #### Dívidas técnicas
-- Nenhuma
+- #158 #159 #160
 
 ### Análise do Scrum Master
-- Essa sprint foi a melhor
+- Essa sprint teve uma dupla com a produtividade muito alta
