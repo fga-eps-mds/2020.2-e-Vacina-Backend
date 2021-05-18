@@ -27,7 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Running test
-      run: npm test
+      run: npx jest --ci
 
     # - name: Generating test report
     #   run: npx jest --coverage
@@ -47,6 +47,3 @@ jobs:
 
     - name: Start containers
       run: docker-compose up -d --build
-
-    - name: Running test
-      run: npx jest --detectOpenHandles --testTimeout=15000
