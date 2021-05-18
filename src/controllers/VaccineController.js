@@ -1,5 +1,5 @@
-const express = require('express');
 const Vaccine = require('../models/Vaccine');
+const TakenVaccineController = require('./TakenVaccineController');
 
 async function createVaccine(request, response){
 
@@ -64,6 +64,9 @@ async function updateVaccine(request, response){
 async function deleteVaccine(request, response){
   try{
     const id = request.params.vaccineId;
+    var MyObjectId = require('mongoose').Types.ObjectId;
+    var queryVenue = {vaccineId: new MyObjectId(id)};
+    const res = await TakenVaccineController.deleteTakenVaccineByComponentId(queryVenue);
     await Vaccine.findByIdAndDelete(id);
     response.send({message: 'Successfully deleted id: ' + id});
   }
