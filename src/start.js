@@ -17,7 +17,7 @@ mongoose.connect(`mongodb+srv://e-vacina-team:${process.env.DB_PASSWORD}@${proce
 });
 
 
-const port = 3000 || process.env.PORT; // whatever is in the environment variable PORT, or 3000 if there's nothing there.
-app.listen(3000, ()=> {
+const port = process.env.PORT || 3000; // whatever is in the environment variable PORT, or 3000 if there's nothing there.
+app.listen(port, ()=> {
     console.log("Listening on port: " + port);
 });
