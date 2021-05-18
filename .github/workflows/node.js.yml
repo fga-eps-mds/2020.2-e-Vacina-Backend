@@ -27,13 +27,13 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Running test
-      run: npx jest --detectOpenHandles --testTimeout=15000
+      run: npm test
 
-    - name: Generating test report
-      run: npx jest --coverage
+    # - name: Generating test report
+    #   run: npx jest --coverage
 
-    - name: Sending the results to codecov
-      run: bash <(curl -s https://codecov.io/bash) -t ${{secrets.CODECOV_TOKEN}}
+    # - name: Sending the results to codecov
+    #   run: bash <(curl -s https://codecov.io/bash) -t ${{secrets.CODECOV_TOKEN}}
 
   docker:
     name: Building docker-compose
