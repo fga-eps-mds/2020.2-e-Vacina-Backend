@@ -5,7 +5,7 @@
    try{
      const { profileId, vaccineId } = request.body;
      if( (await TakenVaccine.find({profileId,vaccineId}) ).length !== 0){
-        return response.send({test});
+        return response.status(400).send({error: 'Vaccine already taken'});
      }
     
      const takenVaccine = await TakenVaccine.create(request.body);
@@ -57,17 +57,15 @@
    try{ 
      const takenVaccineId = request.params.takenVaccineId;
      const currentTakenVaccine = await TakenVaccine.findById(takenVaccineId);
-     const {newDate} = request.body;
+     const {dateOfDosesTaken} = request.body;
 
-     if(!newDate)
-      return response.status(400).send({error: 'Wrong new date'});
+     if(!dateOfDosesTaken)
+      return response.status(400).send({error: 'Dates to update not found'});
      
      if(!currentTakenVaccine)
       return response.status(400).send({error: 'Vaccine not found, check id again'});
 
-      const newDates = currentTakenVaccine.dateOfDosesTaken;
-      newDates.push(newDate);
-      const update = {dateOfDosesTaken: newDates};
+      const update = {dateOfDosesTaken: dateOfDosesTaken};
     
      const takenVaccine = await TakenVaccine.findByIdAndUpdate(takenVaccineId, update, {new:true});
     

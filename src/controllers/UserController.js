@@ -78,11 +78,11 @@ async function updateUser(request, response){
     if(password) {
       var user = await User.findById(id).select('+password');
       if(!user){
-        return res.status(400).send({error: "Error updating user info"});
+        return response.status(400).send({error: "Error updating user info"});
       }
       
       if(await bcrypt.compare(password, user.password)){
-        return res.status(400).send({error: "Password cannot be the same"});
+        return response.status(400).send({error: "Password cannot be the same"});
       }
       
       const newPassword = await bcrypt.hash(password, 10);
