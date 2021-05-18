@@ -14,12 +14,10 @@ const TakenVaccineSchema = new mongoose.Schema({
     required: true,
   },
 
-  numberOfDosesTaken:{
-    type: Number,
-    required: true
-  }
+  dateOfDosesTaken:[{
+    type: Date,
+  }]
  
-  
 });
 
 

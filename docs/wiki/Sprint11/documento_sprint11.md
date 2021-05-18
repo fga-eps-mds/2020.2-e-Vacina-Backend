@@ -8,11 +8,10 @@ Duração: 04/05 à 11/05
 
 
 ## Objetivo
--  
--  
--  
--  
-- 
+-  Criar tela de selecionar perfil
+-  Criar tela de pesquisar vacinas
+-  Criar tela de adicionar vacinas
+-  Adicionar testes no front-end
 
 ## Papeis definidos
 | Membros  |  Função  |
@@ -26,21 +25,19 @@ Duração: 04/05 à 11/05
 ## Backlog
 | Issue | Descrição | Pontuação | Responsáveis | Status | Prioridade | Repositório |
 | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |------------------- |------------------- | 
-|**#146**|  | 3 | Erick | In progress | * | ||Front-end |
-|**#147**|  | 3 |  | A fazer | * | Back-end |
-|**#148**|  | 5 |  | A fazer | * | Front-end |
-|**#149**|  | 2 |  | A fazer | * | Front-end |
-|**#150**|  | 5 |  | A fazer | * | Front-end |
-|**#151**|  | 3 |  | A fazer | * | Front-end |
+|**#153**| Completar tabela de vacinas | 8 | Guilherme | In progress |Must| * |
+|**#154**| Criar tela selecionar perfil | 5 | Paulo, Erick  | A fazer | Must | Front-end |
+|**#155**| Criar tela de pesquisar vacinas | 5 | Paulo, Erick | A fazer | Must | Front-end |
+|**#156**| Criar tela de adicionar vacina | 5 | Paulo, Erick | A fazer | Must | Front-end |
+|**#158**| Estudar importação de dados para o banco | 3 | Carlos | A fazer | * | * |
+|**#159**| Adicionar testes ao front-end | 5 | Ciro | A fazer | Must | Front-end |
+
 
 ## Extra
 | Issue | Descrição | Pontuação | Responsáveis | Status | Prioridade | Repositório |
 | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |------------------- |------------------- | 
+|**#168**| Arrumar tela de registro | 2 | Paulo, Erick | A fazer | * | Front-end |
 
 
 ## Pareamento
-- Carlos, Erick
-- Ciro, Guilherme
-- Ciro, Gabriel
-- Guilherme, Paulo
-- Paulo, Carlos
+- Paulo, Erick

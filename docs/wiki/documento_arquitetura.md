@@ -42,18 +42,6 @@
 - [5.3.1 Front-end](#_531-Front-end)
 - [5.3.2 Back-end](#_532-Back-end)
 
-<!-- 6. Tamanho e Desempenho
-7. Qualidade
-- 7.1 Precisão
-- 7.2 Confiabilidade
-- 7.3 Eficiência
-- 7.4 Integridade
-- 7.5 Usabilidade
-- 7.6 Manutenibilidade
-- 7.7 Testabilidade
-- 7.8 Flexibilidade
-- 7.9 Portabilidade -->
-
 ## 1. Introdução
 
 ### 1.1 Finalidade
@@ -95,8 +83,12 @@ Interagindo com o Front-end o usuário terá acesso ao núcleo das funcionalidad
 ### 2.3 Tecnologias
  #### 2.3.1 Flutter
  Flutter é um kit de desenvolvimento de interface de usuário, de código aberto, criado pelo Google, que possibilita a criação de aplicativos compilados nativamente.
+
+ ![Arquitetura Flutter](../assets/FlutterArch.png)
  #### 2.3.2 Node.js
- Node.js foi projetado para construir aplicativos de rede escalonáveis.O código de Node.js é baseado na arquitetura event-driven, capaz de entrada/saída assíncrona. Otimizado para ser corrido em tempo real tratando-se também de um ditribuído
+ Node.js foi projetado para construir aplicativos de rede escalonáveis.O código de Node.js é baseado na arquitetura event-driven, capaz de entrada/saída assíncrona. Otimizado para ser corrido em tempo real tratando-se também de um ditribuído.
+ 
+ ![Arquitetura Node](../assets/NodeArch.png)
  #### 2.3.3 MongoDB
  O MongoDB é um gerenciador de banco de dados não relacional que proporciona forte confiabilidade, robustez de recursos, flexibilidade e desempenho.
  #### 2.3.4 Docker
@@ -176,14 +168,3 @@ O aplicativo baseia-se em uma arquitetura de objetos que possuem uma relação d
   ####  5.3.3 Diagrama de banco de dados
   ![Banco de dados](../assets/diagrama_banco_de_dados.png)
 
-<!-- ## 6. Tamanho e Desempenho
-## 7. Qualidade
-### 7.1 Precisão
-### 7.2 Confiabilidade
-### 7.3 Eficiência
-### 7.4 Integridade
-### 7.5 Usabilidade
-### 7.6 Manutenibilidade
-### 7.7 Testabilidade
-### 7.8 Flexibilidade
-### 7.9 Portabilidade -->  

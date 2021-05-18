@@ -29,8 +29,7 @@ const VaccineSchema = new mongoose.Schema({
   },
 
   periodicity:{
-    type: Number,
-    required: true,
+    type: Number
   }
   
 });
