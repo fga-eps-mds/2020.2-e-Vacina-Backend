@@ -1,5 +1,7 @@
 # Carteira de Vacinação Digital
 
+[![codecov](https://codecov.io/gh/ciro-c/2020.2-e-Vacina-Backend/branch/main/graph/badge.svg?token=62K3QR3QBJ)](https://codecov.io/gh/ciro-c/2020.2-e-Vacina-Backend)
+
 ## Descrição
 Este é o repositório destinado ao backend do e-Vacina. O e-Vacina é um aplicativo para IOS e Android de carteira de vacinação digital. O e-Vacina irá ajudar nas campanhas de vacinação da populção, informando novas vacinas e campanhas além de guardar dados sobre vacinas já aplicadas.  
 
