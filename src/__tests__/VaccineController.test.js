@@ -68,8 +68,8 @@ describe('Vaccine Controller', () => {
     expect(response.status).toBe(400);
   });
 
-  it('Should fail to create vaccine with no fields', async() => {
-    const response = await request.post('/vaccine').set({'Authorization':`Bearer ${token}`}).send({});
+  it('Should fail to create vaccine with no required fields', async() => {
+    const response = await request.post('/vaccine').set({'Authorization':`Bearer ${token}`}).send({name:"vacininha"});
     expect(response.status).toBe(400);
   });
   
