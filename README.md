@@ -29,8 +29,14 @@ $ cd 2020.2-e-Vacina-Backend
 ```  
 ### Executando o conteiner
 ```bash
-$ docker-compose up --build
+$ make up-build
 ```
+
+### Rodandos os testes
+```bash
+$ make test
+```
+
 ## Apresentações
 
 [Apresentação da Realese 1](https://youtu.be/3epp9Zc3qPY)
