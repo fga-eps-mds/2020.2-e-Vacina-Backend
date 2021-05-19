@@ -17,7 +17,7 @@ down:
 
 .PHONY: test
 
-test: 
+test:
 	npm install
-	npm test
+	npm run test
 

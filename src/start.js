@@ -1,12 +1,21 @@
 const app = require('./server.js');
 const mongoose = require('mongoose');
 
-mongoose.connect(`mongodb+srv://e-vacina-team:${process.env.DB_PASSWORD}@${process.env.DB_USERNAME}.be4j5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, {
+let db_path = 'mongodb://mongodb:27017/e-vacina';
+
+if(process.argv.includes('-production'))
+    db_path = `mongodb+srv://e-vacina-cluster:${process.env.DB_PASSWORD}@${process.env.DB_USERNAME}.ujfqs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+
+
+
+mongoose.connect(db_path, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
     useCreateIndex: true,
 },
+
+
 (err) => {
     if (!err) {
         console.log('Successfully Established Connection with Database')
