@@ -3,13 +3,12 @@ const axios = require('axios');
 const csv = require('csv-parser');
 const fs = require('fs');
 const getStream = require('get-stream');
-
-const mongoose = require('mongoose');
+require('dotenv').config();
 
 const path = "https://e-vacina-backend.herokuapp.com/auth/loginAdmin";
 const admin = {
-  email: 'e.vacina.team@gmail.com',
-  password: 'evacina3500'
+  email: process.env.ADMIN_EMAIL,
+  password: process.env.ADMIN_PASSWORD
 }
 
 async function popullate(){
