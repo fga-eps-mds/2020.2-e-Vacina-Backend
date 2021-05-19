@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "nodemon -L src/start.js",
+    "prod": "node src/start.js -production",
     "popullate": "node scripts/popullate/popullate.js",
     "precommit": "npm run lint",
     "test": "jest --detectOpenHandles --testTimeout=15000"
