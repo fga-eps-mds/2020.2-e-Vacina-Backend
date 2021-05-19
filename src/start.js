@@ -6,8 +6,7 @@ let db_path = 'mongodb://mongodb:27017/e-vacina';
 if(process.argv.includes('-production'))
     db_path = `mongodb+srv://e-vacina-cluster:${process.env.DB_PASSWORD}@${process.env.DB_USERNAME}.ujfqs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 
-console.log(process.argv);
-console.log(db_path);
+
 
 mongoose.connect(db_path, {
     useNewUrlParser: true,
