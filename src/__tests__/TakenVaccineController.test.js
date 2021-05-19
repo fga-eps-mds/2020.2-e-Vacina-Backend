@@ -87,6 +87,24 @@ describe('TakenVaccine Controller', () => {
 
   });
 
+  it('should fail to save repeated taken vaccine', async() => {
+    
+    const body = {profileId: profileId, vaccineId: vaccineId, dateOfDosesTaken: dateOfDosesTaken};
+    const response = await request.post('/taken').send(body);
+
+    expect(response.status).toBe(400);
+  });
+
+
+  it('should fail to save taken vaccine', async() => {
+    
+    const body = {profileId: "wrongId", vaccineId: vaccineId, dateOfDosesTaken: dateOfDosesTaken};
+    const response = await request.post('/taken').send(body);
+
+    expect(response.status).toBe(400);
+  });
+
+
   it('should list taken vaccine', async() => {
     const response = await request.get('/taken');
     expect(response.status).toBe(200);
@@ -97,9 +115,34 @@ describe('TakenVaccine Controller', () => {
     expect(response.status).toBe(200);
   });
 
+  it('should get taken vaccine by Profile Id', async() => {
+    const response = await request.get('/taken/p/'+profileId);
+    expect(response.status).toBe(200);
+  });
+
+  it('should fail to taken vaccine by Profile Id', async() => {
+    const response = await request.get('/taken/p/wrong_id');
+    expect(response.status).toBe(400);
+  });
+
+  it('should fail to get taken vaccine by Id', async() => {
+    const response = await request.get('/taken/wrongId');
+    expect(response.status).toBe(400);
+  });
+
   it('should update taken vaccine', async() => {
     const update = {dateOfDosesTaken: new Date("December 17, 1995 03:24:00")};
-    const response = await request.get('/taken/'+takenVaccineId).send(update);
+    const response = await request.put('/taken/'+takenVaccineId).send(update);
+    expect(response.status).toBe(200);
+  });
+
+  it('should fail to delete taken vaccine', async() => {
+    const response = await request.delete('/taken/wrongId');
+    expect(response.status).toBe(400);
+  });
+
+  it('should delete taken vaccine', async() => {
+    const response = await request.delete('/taken/'+takenVaccineId);
     expect(response.status).toBe(200);
   });
 
