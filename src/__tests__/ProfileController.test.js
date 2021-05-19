@@ -56,6 +56,12 @@ describe('Profile Controller', () => {
 
   });
 
+  it('should fail to create a profile with repeated cpf', async() => {  
+    const response = await request.post('/profile/wrongId').set({'Authorization': `Bearer ${token}`}).send(profile);
+    expect(response.status).toBe(400); 
+
+  });
+
   it('should get a profile by a id', async() => {
 
     const response = await request.get(`/profile/${profileId}`).set({'Authorization': `Bearer ${token}`});
@@ -63,10 +69,25 @@ describe('Profile Controller', () => {
 
   });
 
+
+  it('should get a profile by a id', async() => {
+
+    const response = await request.get(`/profile/609c27260ca2ac001e98eb12`).set({'Authorization': `Bearer ${token}`});
+    expect(response.status).toBe(400);
+
+  });
+
   it('should list all profiles of an user', async() => {
 
     const response = await request.get('/profile/list/'+userId).set({'Authorization': `Bearer ${token}`});
     expect(response.status).toBe(200);
+
+  });
+
+  it('should fail to list all profiles of an user', async() => {
+
+    const response = await request.get('/profile/list/609c20c69f9b2f001e1b819c').set({'Authorization': `Bearer ${token}`});
+    expect(response.status).toBe(400);
 
   });
 
@@ -93,10 +114,52 @@ describe('Profile Controller', () => {
 
   });
 
+  it('should fail to delete profile', async() => {
+    const response = await request.delete('/profile/wrongId/user/'+userId).set({'Authorization': `Bearer ${token}`});
+    expect(response.status).toBe(400);
+  });
+
+  it('should fail to delete profile', async() => {
+    const response = await request.delete('/profile/609c27260ca2ac001e98eb12/user/'+userId).set({'Authorization': `Bearer ${token}`});
+    expect(response.status).toBe(400);
+  });
+
+  it('should fail to delete profile', async() => {
+    const response = await request.delete('/profile/'+profileId+'/user/609c20c69f9b2f001e1b819c').set({'Authorization': `Bearer ${token}`});
+    expect(response.status).toBe(400);
+  });
+
+  it('should fail to delete profile', async() => {
+    const newUser = {
+      email: "maria_onet@gmail.com",
+      phoneNumber: "333 444 555",
+      password:"senha"
+    }
+
+    const savedUser = await request.post('/user').send(newUser);
+    const savedUserId = savedUser.body.user._id;
+    const token = (await request.post('/auth/login').send({email:newUser.email, password:newUser.password})).body.token;
+
+    const newProfile = {
+      name: "Maria",
+      birthDate: "03/03/2000",
+      cpf: "309403943344",
+      sex: 'Female'
+    }
+
+    const savedProfile = await request.post('/profile/' + savedUserId).set({'Authorization': `Bearer ${token}`}).send(newProfile);
+    const newProfileId = savedProfile.body.newProfile._id;
+
+    const response = await request.delete('/profile/'+newProfileId+'/user/'+userId).set({'Authorization': `Bearer ${token}`});
+    expect(response.status).toBe(400);
+
+  })
 
   it('should delete a profile', async() => {
     const response = await request.delete('/profile/'+profileId+'/user/'+userId).set({'Authorization': `Bearer ${token}`});
     expect(response.status).toBe(200);
   });
+
+
 
 });

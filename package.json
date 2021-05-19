@@ -8,8 +8,10 @@
   },
   "scripts": {
     "start": "nodemon -L src/start.js",
+    "prod": "node src/start.js -production",
+    "popullate": "node scripts/popullate/popullate.js",
     "precommit": "npm run lint",
-    "test": "jest --detectOpenHandles --testTimeout=15000"
+    "test": "npx jest --detectOpenHandles --testTimeout=15000 --coverage"
   },
   "repository": {
     "type": "git",
@@ -33,6 +35,8 @@
   },
   "devDependencies": {
     "@shelf/jest-mongodb": "^1.2.4",
+    "axios": "^0.21.1",
+    "csv-parser": "^3.0.0",
     "eslint": "^7.24.0",
     "husky": "^6.0.0",
     "jest": "^26.6.3",

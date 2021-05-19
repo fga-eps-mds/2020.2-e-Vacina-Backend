@@ -14,7 +14,7 @@ async function createVaccine(request, response){
  
   }
   catch(error){
-    return response.status(500).send({error: error});
+    return response.status(400).send({error: error});
   }
 
 }
@@ -25,7 +25,7 @@ async function listVaccines(request, response){
     return response.send({vaccines});
   }
   catch(error){
-    return response.status(500).send({error: error})
+    return response.status(400).send({error: error})
   }
 }
 
@@ -64,6 +64,12 @@ async function updateVaccine(request, response){
 async function deleteVaccine(request, response){
   try{
     const id = request.params.vaccineId;
+    const vaccine = await Vaccine.findById(id);
+    
+    if(!vaccine)
+      return response.status(400).send({error: 'Vaccine not Found'});
+
+    
     var MyObjectId = require('mongoose').Types.ObjectId;
     var queryVenue = {vaccineId: new MyObjectId(id)};
     const res = await TakenVaccineController.deleteTakenVaccineByComponentId(queryVenue);
