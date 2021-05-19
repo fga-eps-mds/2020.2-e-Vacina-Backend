@@ -25,12 +25,14 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-
-    - name: Npm install
+   
+    - name: Npm Install
       run: npm install
 
-    - name: Generating test report and running tests
-      run: npx jest --ci --runInBand
+    - name: Running test
+      env:
+        SECRET: ${{secrets.SECRET}}
+      run: npx jest --runInBand --coverage
 
     - name: Sending the results to codecov
       run: bash <(curl -s https://codecov.io/bash) -t ${{secrets.CODECOV_TOKEN}}
