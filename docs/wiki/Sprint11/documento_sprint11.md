@@ -11,7 +11,6 @@ Duração: 04/05 à 11/05
 -  Criar tela de selecionar perfil
 -  Criar tela de pesquisar vacinas
 -  Criar tela de adicionar vacinas
--  Documentar a api
 -  Adicionar testes no front-end
 
 ## Papeis definidos
@@ -32,7 +31,6 @@ Duração: 04/05 à 11/05
 |**#156**| Criar tela de adicionar vacina | 5 | Paulo, Erick | A fazer | Must | Front-end |
 |**#158**| Estudar importação de dados para o banco | 3 | Carlos | A fazer | * | * |
 |**#159**| Adicionar testes ao front-end | 5 | Ciro | A fazer | Must | Front-end |
-|**#160**| Documentar api | 5 | Carlos | A fazer | * | Back-end |
 
 
 ## Extra

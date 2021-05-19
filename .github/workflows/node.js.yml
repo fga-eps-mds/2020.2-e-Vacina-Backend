@@ -5,35 +5,37 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main,devel ]
+    branches: [ main,devel,runTest ]
   pull_request:
     branches: [ main,devel ]
 
 jobs:
-  # build:
-  #   name: Running tests
-  #   runs-on: ubuntu-latest
+  build:
+    name: Running tests
+    runs-on: ubuntu-latest
 
-  #   strategy:
-  #     matrix:
-  #       node-version: [10.x, 12.x, 14.x, 15.x]
-  #       # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x, 15.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
-  #   steps:
-  #   - uses: actions/checkout@v1
-  #   - name: Use Node.js ${{ matrix.node-version }}
-  #     uses: actions/setup-node@v2
-  #     with:
-  #       node-version: ${{ matrix.node-version }}
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+   
+    - name: Npm Install
+      run: npm install
 
-  #   - name: Running test
-  #     run: npx jest --ci
+    - name: Running test
+      env:
+        SECRET: ${{secrets.SECRET}}
+      run: npx jest --runInBand --coverage
 
-    # - name: Generating test report
-    #   run: npx jest --coverage
-
-    # - name: Sending the results to codecov
-    #   run: bash <(curl -s https://codecov.io/bash) -t ${{secrets.CODECOV_TOKEN}}
+    - name: Sending the results to codecov
+      run: bash <(curl -s https://codecov.io/bash) -t ${{secrets.CODECOV_TOKEN}}
 
   docker:
     name: Building docker-compose
